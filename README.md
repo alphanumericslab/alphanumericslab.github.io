@@ -1,2 +1,2 @@
-# alphanumericslab.github.io
-Alphanumerics Lab Webpage
+### Emory University Department of Biomedical Informatics
+# The Alphanumerics Lab
