@@ -1,5 +1,4 @@
 ---
-title-heading: false
+layout: page
+title: Jobs
 ---
-
-# Jobs
