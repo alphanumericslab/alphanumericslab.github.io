@@ -1,4 +1,6 @@
 ---
 layout: page
-title: About
+title: The Alphanumerics research lab at Emory University
 ---
+
+
