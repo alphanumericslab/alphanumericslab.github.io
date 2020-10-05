@@ -10,7 +10,8 @@ author: Reza Sameni
 
 # --- List of links in the navigation bar --- #
 
-navbar-links:
+#navbar-links:
+header_pages:
   Home: "README.md"
   Projects: "PROJECTS.md"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
