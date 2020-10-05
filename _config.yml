@@ -8,11 +8,11 @@ author: Reza Sameni
 
 # --- List of links in the navigation bar --- #
 #navbar-links:
-header_pages:
-  - README.md
-  - PROJECTS.md
-  - TEAM.md
-  - JOBS.md
+header_pages: 
+ - README.md
+ - PROJECTS.md
+ - TEAM.md
+ - JOBS.md
 
 # --- Logo --- #
 
@@ -25,10 +25,9 @@ round-avatar: false
 
 theme: minima
 
-plugins:
-  jekyll-titles-from-headings
+plugins: jekyll-titles-from-headings
   
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
+titles_from_headings: 
+ enabled: true
+ strip_title: true
+ collections: true
