@@ -11,11 +11,12 @@ author: Reza Sameni
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  Home: "README.md"
+  Projects: "PROJECTS.md"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Team: "TEAM.md"
+  JOBS: "JOBS.md"
 
 # --- Logo --- #
 
