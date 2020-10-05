@@ -1,1 +1,4 @@
-# Team
+---
+layout: page
+title: Team
+---
