@@ -24,5 +24,3 @@ avatar: "/assets/img/EmoryUniversityDBMI.png"
 round-avatar: false
 
 theme: minima
-
-plugins: jekyll-titles-from-headings
