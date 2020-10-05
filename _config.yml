@@ -1,3 +1,5 @@
+gem 'jekyll-titles-from-headings'
+
 # --- Required options --- #
 
 # Name of website
