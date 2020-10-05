@@ -1,1 +1,20 @@
 theme: minima
+
+# --- Required options --- #
+
+# Name of website
+title: The Alphanumerics Lab
+
+# Your name to show in the footer
+author: Reza Sameni
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
+
+# --- Logo --- #
