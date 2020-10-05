@@ -1,1 +1,4 @@
-# About
+---
+layout: page
+title: About
+---
