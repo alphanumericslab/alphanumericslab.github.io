@@ -12,12 +12,10 @@ author: Reza Sameni
 
 #navbar-links:
 header_pages:
-  Home: "README.md"
-  Projects: "PROJECTS.md"
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Team: "TEAM.md"
-  JOBS: "JOBS.md"
+  - Home: "README.md"
+  - Projects: "PROJECTS.md"
+  - Team: "TEAM.md"
+  - JOBS: "JOBS.md"
 
 # --- Logo --- #
 
