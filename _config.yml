@@ -9,7 +9,9 @@ title: The Alphanumerics Lab
 author: Reza Sameni
 
 # --- List of links in the navigation bar --- #
-
+titles_from_headings:
+  enabled: false
+  
 #navbar-links:
 header_pages:
   - README.md
