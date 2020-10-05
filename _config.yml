@@ -10,9 +10,9 @@ author: Reza Sameni
 #navbar-links:
 header_pages: 
  - README.md
- - PROJECTS.md
- - TEAM.md
- - JOBS.md
+ - projects.md
+ - team.md
+ - jobs.md
 
 # --- Logo --- #
 
