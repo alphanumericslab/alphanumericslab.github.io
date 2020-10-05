@@ -12,7 +12,7 @@ author: Reza Sameni
 
 #navbar-links:
 header_pages:
-  - README.md
+  - Home: README.md
   - PROJECTS.md
   - TEAM.md
   - JOBS.md
