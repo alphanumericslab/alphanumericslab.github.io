@@ -11,7 +11,7 @@ author: Reza Sameni
 # --- List of links in the navigation bar --- #
 #navbar-links:
 header_pages: 
- - README.md
+ - index.md
  - projects.md
  - team.md
  - jobs.md
