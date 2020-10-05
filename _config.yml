@@ -10,7 +10,7 @@ author: Reza Sameni
 
 # --- List of links in the navigation bar --- #
 titles_from_headings:
-  enabled: false
+  enabled: true
   
 #navbar-links:
 header_pages:
