@@ -1,1 +1,4 @@
-# Projects
+---
+layout: home
+title: Projects
+---

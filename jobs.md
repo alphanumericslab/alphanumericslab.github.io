@@ -1,1 +1,4 @@
-# Jobs
+---
+layout: home
+title: Jobs
+---

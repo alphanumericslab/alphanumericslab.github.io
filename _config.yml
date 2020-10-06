@@ -2,14 +2,16 @@
 
 # Name of website
 title: The Alphanumerics Lab
+subtitle: Biomedical Informatics
+description: The Alphanumerics Lab at Emory University
 
 # Your name to show in the footer
-author: Reza Sameni
+author:  Copyright 2020, Reza Sameni
 
 # --- List of links in the navigation bar --- #
 #navbar-links:
 header_pages: 
- - README.md
+ - index.md
  - projects.md
  - team.md
  - jobs.md
@@ -23,4 +25,4 @@ avatar: "/assets/img/EmoryUniversityDBMI.png"
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
 
-theme: jekyll-theme-minima
+theme: minima
