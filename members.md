@@ -3,11 +3,9 @@ layout: home
 title: Members
 ---
 
-## Lab Founder and Director
-
 <img width="200px" src="/assets/photos/rezasameni.jpg">
 
-[Reza Sameni](https://www.sameni.info)
+[Reza Sameni](https://www.sameni.info), Lab Founder and Director
 
 Associate Professor, IEEE Senior Member
 
