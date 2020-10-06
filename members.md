@@ -5,7 +5,7 @@ title: Members
 
 <img width="200px" src="/assets/photos/rezasameni.jpg">
 
-[Reza Sameni](https://www.sameni.info), Founder and Director
+[Reza Sameni](https://sameni.info), Founder and Director
 
 Associate Professor, IEEE Senior Member
 
