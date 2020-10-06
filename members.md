@@ -21,4 +21,4 @@ Associate Professor, IEEE Senior Member
 <!---  ... |  ... | ... | ... --->
 
 ## Alumni
-See: https://sameni.info/Team/
+See our [lab alumni page](https://sameni.info/Team/).
