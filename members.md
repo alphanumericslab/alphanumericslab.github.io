@@ -5,7 +5,7 @@ title: Members
 
 <img width="200px" src="/assets/photos/rezasameni.jpg">
 
-[Reza Sameni](https://www.sameni.info), Lab Director
+[Reza Sameni](https://www.sameni.info), Lab Founder and Director
 
 <!---  Researcher | Name & Current Position | Research During Collaboration | Years --->
 <!--- ------------ | ------------- | ------------- | ------------- --->
