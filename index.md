@@ -1,3 +1,4 @@
+![Logo](/assets/img/CardiacCycleLogo.png)
 ---
 layout: home
 title: About
