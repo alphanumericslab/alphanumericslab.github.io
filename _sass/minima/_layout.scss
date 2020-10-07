@@ -28,6 +28,14 @@
   }
 }
 
+.site-title::before {
+ 	content: url("/assets/img/EmoryUniversity/Shield/jpg_png/EU_shield_hz_bk.png");
+ 	display: inline-block;
+ 	position: relative;
+ 	width: 37px;
+ 	top: 5px;
+ }
+
 .site-nav {
   position: absolute;
   top: 9px;
