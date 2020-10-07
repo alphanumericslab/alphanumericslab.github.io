@@ -1,7 +1,8 @@
 ---
 layout: page
-title: <img src="https://avatars2.githubusercontent.com/u/15176335?v=3"> About
+# title: <img src="https://avatars2.githubusercontent.com/u/15176335?v=3"> About
 ---
+# <img src="https://avatars2.githubusercontent.com/u/15176335?v=3"> About
 
 The [Alphanumerics Lab](https://alphanumericslab.github.io) is centered at [Emory University](https://www.emory.edu) [Department of Biomedical Informatics (DBMI)](https://med.emory.edu/departments/biomedical-informatics/index.html). Our research interests include the development of devices, algorithms and software for the acquisition and processing of biomedical signals and data. Together with our clinical associates, industrial collaborators, and partners labs, we are committed to providing solutions and developing operational systems for real-world biomedical applications.
 
