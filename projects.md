@@ -3,7 +3,6 @@ layout: page
 title: Projects
 ---
 
-***
 ## Biomedical Signal Processing and Modeling
 ### 1. Mathematical modeling of epidemic diseases
 
