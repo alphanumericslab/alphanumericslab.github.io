@@ -16,6 +16,9 @@ header_pages:
  - members.md
  - jobs.md
 
+plugins:
+ - jekyll-seo-tag
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
