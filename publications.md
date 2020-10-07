@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Home
+layout: page
 ---
 <div>{% include index.html %}</div>
