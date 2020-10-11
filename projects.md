@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Projects
 ---
 
@@ -41,7 +41,7 @@ Hardware accelerators are currently at the heart of many machine learning and (b
 
 ***
 ## Interpretive signal processing
-Interpretive Signal Processing (ISP) is an ad hoc technique for customizing signal processing algorithms for non-numeric data. Genomic data such as DNA or protein sequences are examples of such data. Contrary to the conventional approach of coding and decoding non-numeric data to numeric values, the main idea in ISP is to interpret signal processing algorithm as they are and to taylor similar operators for the direct manipulation of non-numeric data. We have studied two cases of ISP in our previous research:
+Interpretive Signal Processing (ISP) is an ad hoc technique for customizing signal processing algorithms for non-numeric data. Genomic data such as DNA or protein sequences are examples of such data. Contrary to the conventional approach of coding and decoding non-numeric data to numeric values, the main idea in ISP is to interpret signal processing algorithm as they are and to tailor similar operators for the direct manipulation of non-numeric data. We have studied two cases of ISP in our previous research:
 * [Similarity Search Using Matched Filtering in Genomic Data](https://doi.org/10.1109/AISP.2012.6313793)
 * [Interpretive Time-Frequency Analysis of Non-numeric Genomic Data](https://doi.org/10.1186/s12859-017-1524-0)
 * See also the extended version [here](https://rsameni.github.io/Research/Projects/ISP/ISP.html).
