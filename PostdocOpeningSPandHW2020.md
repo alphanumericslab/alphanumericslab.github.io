@@ -1,4 +1,7 @@
-# Postdoctoral position in signal processing and hardware design
+---
+layout: home
+title: Postdoctoral position in signal processing and hardware design
+---
 ## Job Description
 Helps design and conducts research in the field of hardware design for biomedical applications, while receiving advanced training from a designated Principal Investigator to enhance professional skills and research independence needed for career pursuit. The specific focus of research in which the trainee is mentored is determined by the department and laboratory of the Postdoc. Develops new ideas that promote current research. Helps in the preparation of project proposals and grant applications. Prepares and publishes scientific manuscripts under the direction of the Principal Investigator. Designs and evaluates experiments and may be responsible for operation of specific equipment. May teach techniques to others, train, and supervise research staff. Positions are temporary appointments as a research trainee. The initial appointment is for one year, renewal expected if progress is satisfactory and funds are available. Appointments cannot exceed five years.
 
