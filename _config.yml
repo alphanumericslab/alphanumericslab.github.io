@@ -3,7 +3,7 @@ author:
   name: Copyright 2020, Reza Sameni
   email:
 description: > # this means to ignore newlines until "show_excerpts:"
-  The Alphanumerics Lab at Emory University
+  Emory University Department of Biomedical Informatics
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
