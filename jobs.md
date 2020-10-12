@@ -9,5 +9,5 @@ We actively recruit graduate students and postdoctoral researchers for our lab. 
 - [Emory University’s Career Page]( https://www.hr.emory.edu/careers/)
 
 ## PostDoc opennings for 2020-2021:
-- [Signal processing and machine learning](/_includes/PostdocOpeningSPandML2020.md)
-- [Signal processing and hardware design](/_includes/PostdocOpeningSPandHW2020.md)
+- [Signal processing and machine learning](PostdocOpeningSPandML2020.md)
+- [Signal processing and hardware design](PostdocOpeningSPandHW2020.md)
