@@ -13,9 +13,9 @@ minima:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
+  # social_links:
     # twitter: jekyllrb
-    github:  alphanumericslab
+    # github:  alphanumericslab
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -48,7 +48,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages: 
- - about.md
+ # - about.md
  - projects.md
  - publications.md
  - codes.md

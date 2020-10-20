@@ -12,8 +12,8 @@ Associate Professor, IEEE Senior Member
 ## Collaborators
 *To be added....*
 
-## Current Members
-*To be added....*
+<!---## Current Members--->
+<!---*To be added....*--->
 
 <!---  Researcher | Name & Current Position | Research During Collaboration | Years --->
 <!--- ------------ | ------------- | ------------- | ------------- --->
@@ -21,4 +21,4 @@ Associate Professor, IEEE Senior Member
 <!---  ... |  ... | ... | ... --->
 
 ## Alumni
-See our [lab alumni page](https://sameni.info/Team/).
+See our [lab alumni page](https://sameni.info/Team.html).
