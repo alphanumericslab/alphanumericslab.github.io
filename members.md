@@ -30,4 +30,3 @@ Lab Founder and Director
 
 ## Alumni
 See our [lab alumni page](https://sameni.info/Team.html).
----
