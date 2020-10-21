@@ -11,7 +11,7 @@ Associate Professor, Department of Biomedical Informatics, Emory University
 
 Lab Founder and Director
 
-## Collaborators
+## Mentors & Collaborators
 
 | <img height="250px" src="/assets/photos/christianjutten.jpg"> | <img height="250px" src="/assets/photos/gariclifford.jpg"> | <img height="250px" src="/assets/photos/mohammadbaghershamsollahi.jpg"> |
 | :--- | :--- | :--- |
