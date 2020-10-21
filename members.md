@@ -5,8 +5,11 @@ title: Members
 
 <img height="250px" src="/assets/photos/rezasameni.jpg">
 
-[Reza Sameni](https://sameni.info), Lab Founder and Director
+[Reza Sameni](https://sameni.info)
+
 Associate Professor, Department of Biomedical Informatics, Emory University
+
+Lab Founder and Director
 
 ## Collaborators
 
