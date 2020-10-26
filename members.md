@@ -6,9 +6,7 @@ title: Members
 ## Founder and Director
 <img height="250px" src="/assets/photos/rezasameni.jpg">
 
-[Dr. Reza Sameni](https://sameni.info)
-
-Associate Professor, Department of Biomedical Informatics, Emory University
+[Dr. Reza Sameni](https://sameni.info), Associate Professor, Department of Biomedical Informatics, Emory University
 
 ## Mentors & Collaborators
 
