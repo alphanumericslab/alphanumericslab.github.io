@@ -8,6 +8,6 @@ We actively recruit graduate students and postdoctoral researchers for our lab. 
 - [Department of Biomedical Informatics on LinkedIn]( https://www.linkedin.com/company/emory-university-biomedical-informatics)
 - [Emory University’s Career Page]( https://www.hr.emory.edu/careers/)
 
-## Postdoc openings for 2020-2021:
+## Postdoc openings for 2020-2021
 - [In signal processing and machine learning](PostdocOpeningSPandML2020.md)
 - [In signal processing and hardware design](PostdocOpeningSPandHW2020.md)
