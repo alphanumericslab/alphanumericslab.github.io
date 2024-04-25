@@ -27,8 +27,7 @@ title: Members
 | ![Masoud Nateghi](Team/masoud-nateghi.png) | ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
 | Massoud Nateghi, PhD student, Emory University | Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Institute of Technology |  |
 
-## Alumni
-### Emory University & Georgia Institute of Technology
+## Emory University & Georgia Tech Alumni
 
 | ![Mircea Dumitru](Team/mircea-dumitru.jpg)  | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
 | :---: | :---: | :---: |
@@ -37,7 +36,7 @@ title: Members
 | | Ava Mehri, Intern, PhD student, University of Illinois Chicago| |
 
 
-### Shiraz University
+## Shiraz University Alumni
 
   Researcher/Student | Name & Current Position | Research During Collaboration | Years
 ------------ | ------------- | ------------- | -------------
