@@ -5,16 +5,15 @@ title: Members
 
 ## Lab Director
 
-
-| ![Reza Sameni](Team/reza-sameni.png) |
+| ![Dr. Reza Sameni](Team/reza-sameni.png) |
 | :---: |
-| [Dr Reza Sameni](https://sameni.info/), Associate Professor, Department of Biomedical Informatics, Emory University, Adjunct Associate Professor, Department of Biomedical Engineering, Georgia Institute of Technology |
+ [Dr Reza Sameni](https://sameni.info/) <br> Associate Prof, Dept of BMI, Emory University <br> Adjunct Associate Prof, Dept of BME, Georgia Tech |
 
 ## Mentors
 
 | ![Prof. Christian Jutten](Team/christian-jutten.jpg)  | ![Prof. Gari D. Clifford](Team/gari-clifford.jpg)  | ![Prof. Mohammad B. Shamsollahi](Team/mohammadbagher-shamsollahi.jpg)  |
 | :---: | :---: | :---: |
-| [Prof. Christian Jutten](http://www.gipsa-lab.fr/~christian.jutten/), Emeritus Professor of Université Grenoble Alpes | [Prof. Gari Clifford](http://gdclifford.info), Chair of the Department of Biomedical Informatics, Emory University | [Prof. Mohammad-Bagher Shamsollahi](http://sharif.edu/~mbshams/), Sharif University of Technology |
+| [Prof. Christian Jutten](http://www.gipsa-lab.fr/~christian.jutten/), Emeritus Prof of Université Grenoble Alpes | [Prof. Gari Clifford](http://gdclifford.info), Dept of BMI and BME, Emory University and Georgia Tech | [Prof. Mohammad-Bagher Shamsollahi](http://sharif.edu/~mbshams/), Sharif University of Technology |
 
 <!--- To be added |  To be added | To be added | To be added --->
 <!---  ... |  ... | ... | ... --->
@@ -25,13 +24,13 @@ title: Members
 | :---: | :---: | :---: |
 | Deepanshi, MSc, Software Engineer | Sajjad Karimi, Postdoc, Emory University | Somayyeh Mousavi, PhD student, Emory University |
 | ![Masoud Nateghi](Team/masoud-nateghi.png) | ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
-| Massoud Nateghi, PhD student, Emory University | Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Institute of Technology |  |
+| Massoud Nateghi, PhD student, Emory University | Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Tech |  |
 
 ## Emory University & Georgia Tech Alumni
 
 | ![Mircea Dumitru](Team/mircea-dumitru.jpg)  | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
 | :---: | :---: | :---: |
-| Mircea Dumitru, Postdoc, Emory University | Kshama Shivashankara, MSc student, Georgia Institute of Technology | Giulia Baldazzi, PhD, Fulbright Scholar |
+| Mircea Dumitru, Postdoc, Emory University | Kshama Shivashankara, MSc student, Georgia Tech | Giulia Baldazzi, PhD, Fulbright Scholar |
 | | ![Ava Mehri](Team/ava-mehri.png) | |
 | | Ava Mehri, Intern, PhD student, University of Illinois Chicago| |
 
@@ -47,7 +46,7 @@ title: Members
 <img width="200px" src="Team/marziehfatemi.jpeg"> |  [Marzieh Fatemi](https://www.linkedin.com/in/marzieh-fatemi-04ba846b/). Biomedical software developer at ScienceBeam | MS thesis in BME: [Application of subspace tracking techniques for fetal cardiac signal extraction](https://doi.org/10.1007/s40998-017-0018-4) | 2011-2013
 <img width="200px" src="Team/sajjad-karimi.png"> |  [Sajjad Karimi](https://www.linkedin.com/in/sajjad-karimi-67483b99/). PhD candidate in Biomedical Engineering at Sharif University of Technology | Blind Source Separation Algorithm Developement  | 2011-2013
 <img width="200px" src="Team/maryamsamieinasab.JPG"> |  [Maryam Samieinasab](https://scholar.google.com/citations?user=B2Luc-QAAAAJ&hl=en). PhD From Isfahan University of Medical Sciences, Postdoctoral fellow, Baylor College of Medicine (BCM), Houston, Texas (Starting Aug 2020) | MS thesis in BME: [Modeling and Denoising of Fetal Phonocardiogram](https://doi.org/10.1109/IranianCEE.2015.7146186)| 2012-2015
-<img width="200px" src="Team/esmaeilseraj.JPG"> |  [Esmaeil Seraj](https://www.linkedin.com/in/esmaeil-seraj-70590b80/). PhD student at Georgia Institute of Technology | MS thesis in BME: [Study and comparison of cerebral signal phase extraction and analysis methods](https://github.com/EsiSeraj/EEG-PhaseFreq-Analysis) | 2013-2016
+<img width="200px" src="Team/esmaeilseraj.JPG"> |  [Esmaeil Seraj](https://www.linkedin.com/in/esmaeil-seraj-70590b80/). PhD student at Georgia Tech | MS thesis in BME: [Study and comparison of cerebral signal phase extraction and analysis methods](https://github.com/EsiSeraj/EEG-PhaseFreq-Analysis) | 2013-2016
 <img width="200px" src="Team/roohollahmohammadzadeh.jpg"> |  [Roohollah Mohammadzadeh](mailto:ro.mohammadzadeh@gmail.com). PhD Student at Polytechnique Montréal (starting Aug 2020) | MS thesis in Computer Architecture: Implementation of blind source separation and frequency scrambling algorithms on FPGA soft-cores using mixed design | 2013-2016
 <img width="200px" src="Team/peimangordany.jpg"> |  [Peiman Gordany](https://www.linkedin.com/in/peiman-gordany-8b0385b5). MS Graduate in Telecommunications, Senior Design Engineeer at [VAP, Inc.](http://vapco.ir/) | Digital and analog electronics and telecommunications systems expert, Medical electronics device designer and developer | 2014-2020
 <img width="200px" src="Team/samandoostkam.jpg"> |  [Saman Doostkam](mailto:samandoostkam26@yahoo.com). PhD Candidate in Biomedical Engineering at Shiraz University | MS thesis in BME: Design and implementation of a portable assistive system for visually impaired people | 2014-2016
