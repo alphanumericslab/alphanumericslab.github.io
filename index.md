@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-### *From data, to models, algorithms, software and beyond....*
+### *From data, to models, algorithms, decisions and beyond....*
 ![Logo](/assets/img/alphanumerics-lab-logo.png)
 
 
