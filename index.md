@@ -2,7 +2,7 @@
 layout: page
 ---
 ![Logo](/assets/img/alphanumerics-lab-logo.png)
-*From data, to models, algorithms, decisions and beyond....*
+*From data to models, algorithms, decisions and beyond....*
 
 
 ## The Alphanumerics Research Lab at Emory University and Georgia Tech
