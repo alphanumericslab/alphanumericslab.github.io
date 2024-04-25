@@ -87,6 +87,7 @@ Using advanced multichannel signal processing techniques, we have been able to e
 - Razavipour, F., & Sameni, R. (2013). [A general framework for extracting fetal magnetoencephalogram and audio-evoked responses](https://doi.org/10.1016/j.jneumeth.2012.10.021). Journal of neuroscience methods, 212(2), 283-296.
 
 
+---
 ## Public health <a name="public_health"></a>
 
 ### Demography-aware blood pressure monitoring <a name="blood_pressure"></a>
@@ -123,6 +124,7 @@ In collaboration with Prof. Gari Clifford and our extended research team at Emor
 - [safe+natal project](https://safenatal.org/team/)
 - [Prof. Gari D. Clifford's reseearch lab](https://gdclifford.info/research)
 
+---
 ## Data challenges and crowdsourcing <a name="data_challenge_crowdsourcing"></a>
 ![Data challenges](./assets/images/physiocrowd.png)
 
@@ -134,6 +136,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 PhysioCrowd aims to create a sustainable ecosystem for enhancing ECG-based diagnostics by integrating mobile and wearable device technology with advanced machine learning. This initiative seeks to address the gap between the overwhelming influx of biomedical data and the scarcity of expert analysis, exacerbated by challenges like limited data diversity and expertise in algorithmic interpretation. PhysioCrowd proposes a crowdsourcing platform combining human expertise and algorithmic annotations to develop, share, and utilize extensive ECG databases effectively. It emphasizes open licensing to ensure global accessibility, particularly benefiting under-resourced institutions and underserved populations. The platform is designed to support a collaborative environment for algorithm developers, clinicians, and researchers, fostering advancements in cardiology diagnostics and promoting inclusive participation from a diverse range of contributors worldwide. PhysioCrowd will ultimately serve as a major hub for annotated physiological data, advancing open-source algorithm development and contributing broadly to global health improvements. Read more: [PhysioCrowd ECG Annotator](https://physiocrowd.emory.edu/)
 
+---
 ## Former projects <a name="former_research"></a>
 
 ### Portable monitors <a name="hardware_design"></a>
