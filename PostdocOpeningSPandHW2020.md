@@ -1,0 +1,18 @@
+---
+layout: home
+title: Postdoctoral position in signal processing and hardware design
+---
+## Job Description
+Helps design and conducts research in the field of hardware design for biomedical applications, while receiving advanced training from a designated Principal Investigator to enhance professional skills and research independence needed for career pursuit. The specific focus of research in which the trainee is mentored is determined by the department and laboratory of the Postdoc. Develops new ideas that promote current research. Helps in the preparation of project proposals and grant applications. Prepares and publishes scientific manuscripts under the direction of the Principal Investigator. Designs and evaluates experiments and may be responsible for operation of specific equipment. May teach techniques to others, train, and supervise research staff. Positions are temporary appointments as a research trainee. The initial appointment is for one year, renewal expected if progress is satisfactory and funds are available. Appointments cannot exceed five years.
+
+## Minimum Qualifications
+A doctoral degree or equivalent in one of the following majors: Electrical Engineering, Biomedical Engineering, or Computer Science and Engineering, with strong background in Electronics, Computer Architecture, Embedded Systems and Hardware Design. Excellent scientific writing ability and strong oral communication skills. The ability to work effectively and collegially in a multidisciplinary team.
+
+## Additional Details
+The Emory University Department of Biomedical Informatics is recruiting for a post doctorate in the area of analog and digital hardware design and implementation, to conduct high quality research with a particular focus on medical instrumentation and hardware accelerators for biomedical applications. Working in a team of PhD students, postdocs and research professors, represents an opportunity to advance an academic career with strong mentorship and collaboration across schools and units. 
+
+The Department of Biomedical Informatics is a highly dynamic and multidisciplinary environment that has strengths in bioinformatics, global health informatics, imaging informatics, machine learning, mHealth informatics and signal processing. 
+
+Candidates are required to have a strong background in (low-frequency) analog and digital electronics and signal processing. Experience with analog and digital hardware (embedded systems and FPGA) and time-series analytics are essential. Strong programming skills in C++, Matlab, Hardware Description Languages (Verilog or VHDL), low-frequency circuit design and analysis, and PCB design are required; hands-on experience with the full pipeline of signal processing algorithm design to hardware implementation is a strong plus; experience with medical device requirements and standards is a strong plus; experience with high-level synthesis (HLS) technologies, ASIC design and Machine Learning algorithms is desired but not required. A strong sense of responsibility to complete research in a timely manner is required. The position will be for one year in the first instance but with a strong likelihood of continuing for several years, with career progression. Candidates for postdoctoral positions are expected to work proactively, participate in research discussions and lab meetings, publish scholarly research papers, and disseminate research results.
+
+Interested applicants should submit their current CV via the online application form and send a copy with a statement of their career aspirations and interests to bmi-jobs [at] emory.edu and CC Dr. Reza Sameni's Emory University email. 
