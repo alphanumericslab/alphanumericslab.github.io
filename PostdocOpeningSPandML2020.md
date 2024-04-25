@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: Postdoctoral position in signal processing and machine learning
 ---
 ## Job Description

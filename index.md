@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 ### *From data, to models, algorithms, software and beyond....*
 ![Logo](/assets/img/alphanumerics-lab-logo-1.png)
