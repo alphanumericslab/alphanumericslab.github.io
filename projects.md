@@ -57,6 +57,9 @@ Funded by the American Heart Association, we are using this dataset to advance t
 
 - A Kazemnejad,  P Gordany,  R Sameni, [EPHNOGRAM: A Simultaneous Electrocardiogram and Phonocardiogram Database](https://physionet.org/content/ephnogram/)
 
+- A Kazemnejad1, S Karimi, P Gordany, G D Clifford and R Sameni (2024), [An open-access simultaneous electrocardiogram and phonocardiogram database](https://doi.org/10.1088/1361-6579/ad43af), Physiological Measurements
+
+
 ### Electroencephalogram (EEG) analysis <a name="eeg_analysis"></a>
 The EEG phase, including the instantaneous phase (IP) and instantaneous frequency (IF), has emerged as a rich complement to the EEG spectrum, essential for understanding phenomena such as phase coupling and phase resetting. We have made significant contributions to EEG analysis, demonstrating through theoretical proof how the common EEG phase calculation method, widely documented in the literature, is highly susceptible to noise and minor variations in algorithmic parameters. To address this, our team developed a robust Monte Carlo algorithm for EEG phase calculation and successfully applied it in brain-computer interface applications. The source code of this project is available online for public use. Additionally, we have developed algorithms and software to remove electrooculogram (EOG) artifacts from multichannel EEG recordings, serving as a complement to classical ICA-based methods, which often face challenges in automation and performance consistency. Read more:
 
