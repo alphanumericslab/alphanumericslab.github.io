@@ -57,7 +57,7 @@ Funded by the American Heart Association, we are using this dataset to advance t
 
 - A Kazemnejad,  P Gordany,  R Sameni, [EPHNOGRAM: A Simultaneous Electrocardiogram and Phonocardiogram Database](https://physionet.org/content/ephnogram/)
 
-- A Kazemnejad1, S Karimi, P Gordany, G D Clifford and R Sameni (2024), [An open-access simultaneous electrocardiogram and phonocardiogram database](https://doi.org/10.1088/1361-6579/ad43af), Physiological Measurements
+- A Kazemnejad, S Karimi, P Gordany, G D Clifford and R Sameni (2024), [An open-access simultaneous electrocardiogram and phonocardiogram database](https://doi.org/10.1088/1361-6579/ad43af), Physiological Measurement
 
 
 ### Electroencephalogram (EEG) analysis <a name="eeg_analysis"></a>
