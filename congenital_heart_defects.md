@@ -83,7 +83,7 @@ The center is committed to educating both the public and healthcare professional
 ### Interactive Surveillance and Research
 Our future perspective for Emory's Congenital Heart Defect Center is to integrate AI and machine learning into our interactive surveillance project. This innovative approach aims to revolutionize the monitoring and treatment of CHD by employing predictive analytics. Through machine learning, we envision improving the precision of CHD tracking and enhancing patient outcomes by developing more personalized and proactive treatment strategies. This integration represents a forward-looking perspective, seeking to set new standards in the care and management of congenital heart defects.
 
-## Emory BMI's Contribution to CHD STAR (Component B)
+## Emory BMI's Contributions to CHD STAR, Component B
 
 ![Congenital heart defects](./assets/images/chd-diagram.png)
 
