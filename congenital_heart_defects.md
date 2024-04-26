@@ -121,5 +121,5 @@ Overall, the proposed machine learning algorithm achieved PPV of 95% (1273/1340)
 ### Codebase 
 The following private repository contains sample codes, pretrained models, and a sample data (exemplifying real CHD data required to run our developed models for identifying patients with CHD using a history of administrative data. Please contact the project PI for access to these codes.
 
-URL: https://github.com/alphanumericslab/emory-chd-identification
+URL: [https://github.com/alphanumericslab/emory-chd-identification](https://github.com/alphanumericslab/emory-chd-identification)
 
