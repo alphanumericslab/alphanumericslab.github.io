@@ -116,7 +116,7 @@ Different training and testing combinations were explored to determine a general
 
 ### Results 
 Baseline PPV of ICD codes for CHD classification was 53.2%, 58.2%, 68.1%, and 84.0% for the Kaiser, South Carolina, combined adult/pediatric, and legacy cardiac database, respectively. 
-Overall, the proposed machine learning algorithm achieved PPV of 95% (1273/1340  ) for the overall dataset with a false negative rate (FNR) of 33% (639/1912) by a chosen operating point from the PPV-FN rate curve for CHD prediction across the four datasets, prioritizing PPV. Applying XGBoost for feature selection decreased 2,105 CCS schemes generated features to the 137 best features that identified true positive CHD and false positive CHD cases. 
+Overall, the proposed machine learning algorithm achieved PPV of 95% (1273/1340) for the overall dataset with a false negative rate (FNR) of 33% (639/1912) by a chosen operating point from the PPV-FN rate curve for CHD prediction across the four datasets, prioritizing PPV. Applying XGBoost for feature selection decreased 2,105 CCS schemes generated features to the 137 best features that identified true positive CHD and false positive CHD cases. 
 
 ### Codebase 
 The following private repository contains sample codes, pretrained models, and a sample data (exemplifying real CHD data required to run our developed models for identifying patients with CHD using a history of administrative data. Please contact the project PI for access to these codes.
