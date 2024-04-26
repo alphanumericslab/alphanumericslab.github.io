@@ -15,6 +15,8 @@ Congenital heart defects (CHDs) occur in approximately 1% of births, or 40,000 a
 Survival rates in infants with CHD into adulthood have significantly increased over the past few decades, thanks to screening programs that enable early detection during and after pregnancy, as well as innovative surgical procedures that correct or modify structural defects. Additionally, collaborative public health surveillance among clinicians, public health professionals, and other researchers has created an environment where CHD survival can be assessed alongside comorbidities, healthcare utilization, and socioeconomic factors, influencing decision-making in healthcare policy and clinical settings.
 
 ## Congenital Heart Defects Projects at Emory University
+![Congenital heart defects](./assets/images/emory-chd-studies.jpeg)
+
 Since 2012, the Emory Adolescent and Adult Congenital Heart Defect (CHD) Program, in collaboration with the Centers for Disease Control and Prevention (CDC) and other institutions nationwide, has been striving to enhance understanding of the strengths and limitations of CHD surveillance in the U.S., describe the characteristics and healthcare utilization of the adolescent and adult CHD population, and inform actions to improve health outcomes and address inequities. A brief overview of these programs led by Dr Wendy Book and her team at Emory are presented below. Further information can be found at:
 - [Emory University's Congenital Heart Defects Program](https://sph.emory.edu/research/centers/congenital-heart-defect/index.html)
 - [Emory University's Congenital Heart Disease Center](https://scholarblogs.emory.edu/congenitalheart/team/)
@@ -50,7 +52,7 @@ Since 2012, the Emory Adolescent and Adult Congenital Heart Defect (CHD) Program
 
 **Clinical and Mortality Insights:** A study examining hypertension and heart failure as predictors of mortality in adults with CHD found increased risks associated with these conditions, emphasizing the importance of continuous specialty care regardless of the complexity of the heart defect.
 
-## Congenital Heart Defects (CHD) Surveillance across Time and Regions (CHD-STAR): 2019-2024
+## Congenital Heart Defects (CHD) Surveillance across Time and Regions (CHD-STAR): 2019-2023
 
 **Funding and Support:** Centers for Disease Control and Prevention; Award Numbers: CDC‐RFA‐DD19-1902A and 1902B
 
