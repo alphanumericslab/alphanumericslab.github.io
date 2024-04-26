@@ -37,7 +37,7 @@ Since 2012, the Emory Adolescent and Adult Congenital Heart Defect (CHD) Program
 
 **Additional Research on CHD in Pregnant Women:** Data shows that a notable percentage of women with CHD of childbearing age experience pregnancy, with those having severe CHD facing higher rates of non-gestational health issues. Insurance coverage varies greatly, with government insurance more prevalent among pregnant women in GA and MA, compared to NY where private insurance is more common.
 
-## Surveillance of CHD across the Lifespan: 2015-2019
+### Surveillance of CHD across the Lifespan: 2015-2019
 **Funding and Support:** Centers for Disease Control and Prevention; Award Number: CDC‐RFA‐DD15-1506
 
 **Surveillance Period:** 2011 - 2013
@@ -52,7 +52,7 @@ Since 2012, the Emory Adolescent and Adult Congenital Heart Defect (CHD) Program
 
 **Clinical and Mortality Insights:** A study examining hypertension and heart failure as predictors of mortality in adults with CHD found increased risks associated with these conditions, emphasizing the importance of continuous specialty care regardless of the complexity of the heart defect.
 
-## Congenital Heart Defects (CHD) Surveillance across Time and Regions (CHD-STAR): 2019-2023
+### Congenital Heart Defects (CHD) Surveillance across Time and Regions (CHD-STAR): 2019-2023
 
 **Funding and Support:** Centers for Disease Control and Prevention; Award Numbers: CDC‐RFA‐DD19-1902A and 1902B
 
@@ -68,21 +68,21 @@ Since 2012, the Emory Adolescent and Adult Congenital Heart Defect (CHD) Program
 
 **Impact and Outcomes:** Provided significant insights into the validity and utility of healthcare claims data for CHD surveillance, contributing to improved accuracy in identifying and monitoring CHD. Helped refine strategies for secondary prevention, enhancing decision-making among stakeholders and supporting more effective public health interventions for CHD. Enhanced community and regional partnerships will support the education and consistency of data quality, improving CHD awareness and healthcare planning.
 
-## Emory's Congenital Heart Defect Center
+### Emory's Congenital Heart Defect Center
 ![Congenital heart defects](./assets/images/emory-chd-center-logo.png)
 
 Emory's Congenital Heart Defect Center stands as a beacon of comprehensive care and support for individuals with CHD. With a multifaceted approach, the center focuses on the seamless transition of care from childhood to adult services, robust educational programs, and supporting our team's cutting-edge research on CHD.
 
-### Services for Teens
+#### Services for Teens
 A core mission of the center is to facilitate a smooth transition for teenagers with CHD into adult healthcare. The center offers an interactive section specifically designed for teens, which addresses their unique concerns about CHD, lifestyle implications, and future planning. This interactive tool not only educates but also engages teen agers in proactive health management.
 
-### Support for Parents
+#### Support for Parents
 Recognizing the challenges faced by parents of children with CHD, the center provides targeted resources to assist them. These resources include guidance on discussing CHD with children of various ages, advice on managing the emotional and practical aspects of CHD care, and links to supportive networks and communities. Parental education is geared towards empowering families with knowledge and strategies for daily and long-term management of CHD.
 
-### Educational Services
+#### Educational Services
 The center is committed to educating both the public and healthcare professionals about CHD. Through partnerships with leading health organizations, it disseminates up-to-date, research-backed information on CHD management and care. Educational materials cover a range of educational services from basic heart health to complex surgical interventions, aiming to increase awareness and understanding of CHD.
 
-### Interactive Surveillance and Research
+#### Interactive Surveillance and Research
 Our future perspective for Emory's Congenital Heart Defect Center is to integrate AI and machine learning into our interactive surveillance project. This innovative approach aims to revolutionize the monitoring and treatment of CHD by employing predictive analytics. Through machine learning, we envision improving the precision of CHD tracking and enhancing patient outcomes by developing more personalized and proactive treatment strategies. This integration represents a forward-looking perspective, seeking to set new standards in the care and management of congenital heart defects.
 
 ## Emory BMI's Contributions to CHD STAR, Component B
