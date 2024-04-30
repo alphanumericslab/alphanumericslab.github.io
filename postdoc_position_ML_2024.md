@@ -17,4 +17,8 @@ Candidates are required to have a strong background in at least one of the follo
  
 Experience with large volumes of physiological and temporal medical data and time-series analytics are essential. Strong programming skills in C++, Matlab, Python and modern machine learning platforms are required; experience with computing in cloud environments is a strong plus; some experience with high performance computing and database administration is desired but not required. A strong sense of responsibility to complete research in a timely manner is required. The position will be for one year in the first instance but with a strong likelihood of continuing for several years, with career progression. Candidates for postdoctoral positions are expected to work proactively, participate in research discussions and lab meetings, publish scholarly research papers, and disseminate research results.
 
-Interested applicants should submit their current CV via the online application form and send a copy with a statement of their career aspirations and interests to bmi-jobs [at] emory.edu and CC Dr. Reza Sameni's Emory University email. 
+## Application Link
+
+- Emory University's job portal: https://faculty-emory.icims.com/jobs/125602/post-doctoral-fellow---biomedical-informatics/job
+
+- In addition, interested applicants should submit their current CV via the online application form and send a copy with a statement of their career aspirations and interests to bmi-jobs@emory.edu and CC Dr. Reza Sameni's Emory University email. 
