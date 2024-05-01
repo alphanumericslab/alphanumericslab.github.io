@@ -26,13 +26,13 @@ title: Members
 | ![Masoud Nateghi](Team/masoud-nateghi.png) | ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
 | Massoud Nateghi, PhD student, Emory University | Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Tech |  |
 
-## Emory University & Georgia Tech Alumni
+## Alumni
 
 | ![Mircea Dumitru](Team/mircea-dumitru.jpg)  | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
 | :---: | :---: | :---: |
 | Mircea Dumitru, Postdoc, Emory University | Kshama Shivashankara, MSc student, Georgia Tech | Giulia Baldazzi, PhD, Fulbright Scholar |
-| | ![Ava Mehri](Team/ava-mehri.png) | |
-| | Ava Mehri, Intern, PhD student, University of Illinois Chicago| |
+| ![Amulya Jain](Team/amulya-jain.png) | ![Ava Mehri](Team/ava-mehri.png) | |
+| Amulya Jain, Intern, Dunwoody High School | Ava Mehri, Intern, PhD student, University of Illinois Chicago| |
 
 
 ## Shiraz University Alumni
