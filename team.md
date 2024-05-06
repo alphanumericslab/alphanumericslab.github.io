@@ -31,8 +31,13 @@ title: Members
 | ![Mircea Dumitru](Team/mircea-dumitru.jpg)  | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
 | :---: | :---: | :---: |
 | Mircea Dumitru, Postdoc, Emory University | Kshama Shivashankara, MSc student, Georgia Tech | Giulia Baldazzi, PhD, Fulbright Scholar |
-| ![Ava Mehri](Team/ava-mehri.png) | ![Amulya Jain](Team/amulya-jain.png)| ![Ekaterina Rambaud](Team/ekaterina-rambaud.png) |
-| Ava Mehri, Intern, PhD student, University of Illinois Chicago| Amulya Jain, Intern, Dunwoody High School | Ekaterina Rambaud, Intern, Cambridge High School |
+| ![Ava Mehri](Team/ava-mehri.png) | ![Yu Fung David Wang](Team/david-wang.png) | ![Amulya Jain](Team/amulya-jain.png)|
+| Ava Mehri, Intern, PhD student, University of Illinois Chicago | Yu Fung David Wang, Intern, MSc student, Emory University | Amulya Jain, Intern, Dunwoody High School |
+| ![Ekaterina Rambaud](Team/ekaterina-rambaud.png) | | |
+| Ekaterina Rambaud, Intern, Cambridge High School |  |  |
+
+
+
 
 ## Shiraz University Alumni
 
