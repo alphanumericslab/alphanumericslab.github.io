@@ -40,9 +40,11 @@ The protocol included the following steps: Both groups sat at rest for five minu
 ## Results
 Tables 1A and 1B report blood pressure measurements in the 16 subjects in the three trials. The upper table represents the test group and the lower table represents the control group.
 
-### Table 1A
+### Table 1A - Experimental Group
+
 | Subject ID | BP Before | BP After | BP Before | BP After | BP Before | BP After |
-|------------|-----------|----------|-----------|----------|-----------|----------|
+| :---:      | :---:     | :---:    | :---:     | :---:    | :---:     |:---:     |
+|Record pairs| 1st       | 1st      | 2nd       | 2nd      | 3rd       | 3rd      |
 | 3F         | 101/66    | 104/73   | 117/74    | 120/76   | 100/72    | 96/65    |
 | 8F         | 89/65     | 87/64    | 85/66     | 95/64    | 86/55     | 92/62    |
 | 10F        | 97/58     | 98/59    | 107/66    | 100/68   | 102/62    | 105/57   |
@@ -52,9 +54,11 @@ Tables 1A and 1B report blood pressure measurements in the 16 subjects in the th
 | 4F         | 153/79    | 126/68   | 149/81    | 146/80   | 170/80    | 149/91   |
 | 5M         | 166/87    | 142/84   | 149/82    | 137/77   | 167/90    | 170/82   |
 
-### Table 1B
+### Table 1B - Control Group
+
 | Subject ID | BP Before | BP After | BP Before | BP After | BP Before | BP After |
-|------------|-----------|----------|-----------|----------|-----------|----------|
+| :---:      | :---:     | :---:    | :---:     | :---:    | :---:     |:---:     |
+|Record pairs| 1st       | 1st      | 2nd       | 2nd      | 3rd       | 3rd      |
 | 9F         | 121/67    | 114/69   | 116/70    | 111/71   | 116/68    | 106/67   |
 | 11F        | 91/57     | 85/51    | 87/61     | 87/54    | 99/63     | 91/58    |
 | 14F        | 117/79    | 120/73   | 116/73    | 112/71   | 110/72    | 108/73   |
@@ -65,14 +69,8 @@ Tables 1A and 1B report blood pressure measurements in the 16 subjects in the th
 | 12F        | 148/73    | 113/64   | 143/77    | 125/68   | 146/77    | 132/73   |
 
 Legend:
-- Table 1A: Experimental Group
-- Table 1B: Control Group
 - M=male
 - F=female
-- Colors indicate different pairs of blood pressure determinations:
-  - Orange=first pair
-  - Green=second pair
-  - Blue=third pair
 
 The average MAP (mean arterial pressure) before the intervention in the experimental group was 92.3 mmHg with a standard deviation of 14.8. The MAP was calculated using the formula ⅓(SBP) + ⅔(DBP). After the intervention, the mean went down to 89.9 mmHg with a standard deviation of 13.6.
 
