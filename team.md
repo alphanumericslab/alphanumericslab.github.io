@@ -36,9 +36,6 @@ title: Members
 | ![Ekaterina Rambaud](Team/ekaterina-rambaud.png) | | |
 | Ekaterina Rambaud, Intern, Cambridge High School |  |  |
 
-
-
-
 ## Shiraz University Alumni
 
   Researcher/Student | Name & Current Position | Research During Collaboration | Years

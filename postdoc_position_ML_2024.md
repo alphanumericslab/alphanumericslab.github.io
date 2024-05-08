@@ -19,6 +19,6 @@ Experience with large volumes of physiological and temporal medical data and tim
 
 ## Application Link
 
-- Emory University's job portal: https://faculty-emory.icims.com/jobs/125602/post-doctoral-fellow---biomedical-informatics/job
+- Emory University's official [job portal](https://faculty-emory.icims.com/jobs/125602/post-doctoral-fellow---biomedical-informatics/job) for this position.
 
 - In addition, interested applicants should submit their current CV via the online application form and send a copy with a statement of their career aspirations and interests to bmi-jobs@emory.edu and CC Dr. Reza Sameni's Emory University email. 
