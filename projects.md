@@ -101,6 +101,7 @@ Regular blood pressure (BP) monitoring is crucial for managing cardiovascular di
 - Mousavi, S. S., Reyna, M. A., Clifford, G. D., and Sameni, R. (2024). [A survey on blood pressure measurement technologies: Addressing potential sources of bias](https://doi.org/10.3390/s24061730). Sensors, 24(6), 1730.
 - Mousavi, S. S., Guo, Y., Robichaux C., Sarker, A., Sameni, R. (2024). [Learning from Two Decades of Blood Pressure Data: Demography-Specific Patterns Across 75 Million Patient Encounters](https://arxiv.org/pdf/2402.01598.pdf). IEEE EMBC 2024, Orlando, FL, USA. arXiv preprint arXiv:2402.01598.
 - Guo, Y., Mousavi, S. S., Sameni, R., and Sarker, A. (2024). [Leveraging Large Language Models for Analyzing Blood Pressure Variations Across Biological Sex from Scientific Literature](https://arxiv.org/abs/2402.01826). arXiv preprint arXiv:2402.01826.
+- [Breathwork as an Intervention for White Coat Hypertension](/breathwork)
 
 ### Population-based surveillance of congenital heart diseases  <a name="chd"></a>
 ![Congenital heart defects](./assets/images/chd-diagram.png)
