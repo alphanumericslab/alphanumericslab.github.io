@@ -5,11 +5,13 @@ title: Projects
 
 - [Biomedical signal processing](#bsp)
     - [The open-source electrophysiological toolbox (OSET)](#oset)
+    - [ECG image digitization tools](#ecg_image_digitization)
     - [ECG analysis](#ecg_analysis)
     - [Multimodal cardiac monitoring](#multimodal_cardiovascular)
     - [EEG analysis](#eeg_analysis)
     - [Noninvasive fetal electrocardiography](#f_ecg)
     - [Noninvasive fetal magnetoencephalography](#f_meg)
+    - [Multimodal physiological signal monitoring](#prescribe)
 - [Public health](#public_health)
     - [Demography-aware blood pressure monitoring](#blood_pressure)
     - [Congenital heart defects](#chd)
@@ -31,14 +33,19 @@ title: Projects
 
 The [OSET]((https://github.com/alphanumericslab/OSET)) is a codebase aiming to enhance biomedical informatics and engineering through open-source software development, particularly in biomedical signal processing. Recognizing the gap between advanced data-driven methods and domain-specific skills, OSET was conceived in 2006, building on well-designed and science-driven methodologies for physiological time-series analysis. OSET's functionalities started with toolsets for electrocardiogram data analysis, and were gradually extended to electroencephalogram and phonocardiogram data, which are the most commonly acquired time-series data in biomedical applications. It also features biosignal modeling tools for data augmentation for training machine learning and deep learning models. It also offers generic biosignal processing tools for denoising and curating all types of physiological time-series recordings. The OSET codebase is primarily developed in MATLAB, with some partial functionalities in C++ and more recently in Python. It operates under a permissive open license, encouraging community-driven development. This approach provides a transparent means for implementing physiological signal processing pipelines and offers standardized benchmarking for research and development purposes. Over the years, some modules of OSET have been translated to Python and C/C++, and integrated into medical devices and cloud-based diagnostic software for managing large datasets.
 
-### ECG-Image-Kit <a name="ecg-image-kit"></a>
+### Tools, data and software for ECG image digitization <a name="ecg_image_digitization"></a>
 
-With the shift from printed to digital formats, there is a pressing need to convert paper/scanned ECG archives into time-series data for machine learning (ML) model training, as these models cannot use scanned images directly due to deterioration risks and data requirements.
+With the shift from printed to digital formats, converting paper or scanned ECG records into time-series data has become essential, especially for machine learning (ML) applications. Scanned ECG images, often deteriorated or incomplete, are not directly usable for ML training, making robust digitization crucial.
 
-To overcome these challenges, we have developed [ECG-Image-Kit](https://github.com/alphanumericslab/ecg-image-kit), a toolset for creating synthetic ECG images that mimic real-world imperfections such as wrinkles and handwritten notes on paper-like backgrounds, ensuring no personally identifiable information is included. These images enhance the training and evaluation of ML models for ECG digitization and analysis. [ECG-Image-Kit](https://github.com/alphanumericslab/ecg-image-kit) offers tools for analyzing scanned ECGs, generating synthetic images, and converting them into digital data. We aim to improve ECG digitization and computerized diagnosis through advanced deep learning and image processing techniques. The toolkit is used for data augmentaion in the [2024 PhysioNet Challenge](https://moody-challenge.physionet.org/2024/). Read more here:
-- Kshama Kodthalu Shivashankara, Deepanshi, Afagh Mehri Shervedani, Gari D. Clifford, Matthew A. Reyna, Reza Sameni (2024). A Synthetic Electrocardiogram (ECG) Image Generation Toolbox to Facilitate Deep Learning-Based Scanned ECG Digitization. doi: [10.48550/ARXIV.2307.01946](https://doi.org/10.48550/ARXIV.2307.01946)
+To address this need, we have developed [ECG-Image-Kit](https://github.com/alphanumericslab/ecg-image-kit), a toolkit designed to generate synthetic ECG images that replicate real-world imperfections; and [ECG-Image-Database](https://arxiv.org/abs/2409.16612) a database of ECG images with real-world artifacts. These images include realistic artifacts such as wrinkles, handwritten notes, aging effects, mold growth and other imaging artifacts. The goal is to create training data that allows ML models to accurately digitize and analyze ECGs, while ensuring no personal data is included in the synthetic images. The toolkit facilitates various tasks, including the conversion of ECG images back into usable time-series data through advanced image processing techniques, enabling accurate medical analysis.
 
-- ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, (2024). URL: https://github.com/alphanumericslab/ecg-image-kit
+The [2024 PhysioNet Challenge](https://moody-challenge.physionet.org/2024/) has adopted ECG-Image-Kit and ECG-Image-Database to support teams developing ML models for digitizing and classifying ECGs. The toolkit plays a critical role in data augmentation, helping researchers overcome issues related to small and noisy datasets by providing a broader range of training images with realistic distortions. This improves the robustness of deep learning algorithms in real-world settings. 
+
+For more information, you can explore the following key resources:
+- [ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images (2024)](https://github.com/alphanumericslab/ecg-image-kit)
+- [ECG-Image-Database (2024)](https://arxiv.org/abs/2409.16612)
+- [PhysioNet Challenge 2024: ECG Image Digitization](https://moody-challenge.physionet.org/2024/)
+
 
 ### Electrocardiogram (ECG) analysis <a name="ecg_analysis"></a>
 ![ECG signal processing](./assets/images/biosignal-processing.png)
@@ -89,6 +96,10 @@ Using advanced multichannel signal processing techniques, we have been able to e
 - Moraru, L., Sameni, R., Schneider, U., Haueisen, J., Schleußner, E., and Hoyer, D. (2011). [Validation of fetal auditory evoked cortical responses to enhance the assessment of early brain development using fetal MEG measurements](https://doi.org/10.1088/0967-3334/32/11/002). Physiological measurement, 32(11), 1847.
 - Razavipour, F., & Sameni, R. (2013). [A general framework for extracting fetal magnetoencephalogram and audio-evoked responses](https://doi.org/10.1016/j.jneumeth.2012.10.021). Journal of neuroscience methods, 212(2), 283-296.
 
+### Multimodal physiological signal monitoring <a name="prescribe"></a>
+Understanding implicit beliefs and intentions has long been a focus in psychology, neuroscience, and artificial intelligence. Traditional methods, such as self-report questionnaires, depend on participants' conscious reflection, which can introduce biases and inaccuracies. Recent advancements in neurophysiological sensing technologies provide an opportunity to explore beliefs and intentions at a preconscious level, offering more accurate and objective assessments. The PRESCRIBE study employs a multimodal approach to capture physiological and cognitive data, specifically designed to study individualized belief evaluation. The study integrates various modalities, including electroencephalogram (EEG), electrocardiogram (ECG), seismocardiogram (SCG), respiration, blood pressure, photoplethysmogram (PPG), electrodermal activity (EDA), pupillometry, and eye-tracking data. The data collection process is synchronized across multiple systems: PsychoPy software for experiment control, BioSemi ActiveTwo for EEG data, Biopac for additional physiological signals, and EyeLink 1000 Plus for pupillometry and eye-tracking.
+
+Preliminary results of this ongoaing research are available [here](https://alphanumerics.bmi.emory.edu/multimodal-physio-data-analysis/)
 
 ---
 ## Public health <a name="public_health"></a>
