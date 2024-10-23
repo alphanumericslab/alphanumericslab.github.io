@@ -7,9 +7,9 @@ title: Members
 
 | ![Dr. Reza Sameni](Team/reza-sameni.png) |
 | :---: |
- [Dr Reza Sameni](https://sameni.info/) <br> Associate Prof, Dept of BMI, Emory University <br> Adjunct Associate Prof, Dept of BME, Georgia Tech |
+ [Dr Reza Sameni](https://sameni.info/) <br> Associate Prof, Dept of BMI and BME, Emory University and Georgia Tech |
 
-## Mentors
+## Mentors and Collaborators
 
 | ![Prof. Christian Jutten](Team/christian-jutten.jpg)  | ![Prof. Gari D. Clifford](Team/gari-clifford.jpg)  | ![Prof. Mohammad B. Shamsollahi](Team/mohammadbagher-shamsollahi.jpg)  |
 | :---: | :---: | :---: |
@@ -20,21 +20,21 @@ title: Members
 
 ## Team
 
-| ![Deepanshi](Team/deepanshi.png)  | ![Sajjad Karimi](Team/sajjad-karimi.png)  | ![Somayyeh Mousavi](Team/somayyeh-mousavi.png) |
+|  ![Sajjad Karimi](Team/sajjad-karimi.png)  | ![Somayyeh Mousavi](Team/somayyeh-mousavi.png) | ![Masoud Nateghi](Team/masoud-nateghi.png) |
 | :---: | :---: | :---: |
-| Deepanshi, MSc, Software Engineer | Sajjad Karimi, Postdoc, Emory University | Somayyeh Mousavi, PhD student, Emory University |
-| ![Masoud Nateghi](Team/masoud-nateghi.png) | ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
-| Massoud Nateghi, PhD student, Emory University | Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Tech |  |
+|  Sajjad Karimi, Postdoc, Emory University | Somayyeh Mousavi, PhD student, Emory University | Massoud Nateghi, PhD student, Emory University |
+|  ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
+|  Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Tech |  |
 
 ## Alumni
 
-| ![Mircea Dumitru](Team/mircea-dumitru.jpg)  | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
+| ![Deepanshi](Team/deepanshi.png) | ![Kshama Kodthalu Shivashankara](Team/kshama-kodthalu-shivashankara.png)  | ![Giulia Baldazzi](Team/giulia-baldazzi.png) |
 | :---: | :---: | :---: |
-| Mircea Dumitru, Postdoc, Emory University | Kshama Shivashankara, MSc student, Georgia Tech | Giulia Baldazzi, PhD, Fulbright Scholar |
-| ![Ava Mehri](Team/ava-mehri.png) | ![Yu Fung David Wang](Team/david-wang.png) | ![Amulya Jain](Team/amulya-jain.png)|
-| Ava Mehri, Intern, PhD student, University of Illinois Chicago | Yu Fung David Wang, Intern, MSc student, Emory University | Amulya Jain, Intern, Dunwoody High School |
-| ![Ekaterina Rambaud](Team/ekaterina-rambaud.png) | | |
-| Ekaterina Rambaud, Intern, Cambridge High School |  |  |
+| Deepanshi, MSc, Software Engineer | Kshama Shivashankara, MSc student, Georgia Tech | Giulia Baldazzi, PhD, Fulbright Scholar |
+| ![Mircea Dumitru](Team/mircea-dumitru.jpg) | ![Ava Mehri](Team/ava-mehri.png) | ![Amulya Jain](Team/amulya-jain.png)|
+| Mircea Dumitru, Postdoc, Emory University | Ava Mehri, Intern, PhD student, University of Illinois Chicago | Amulya Jain, Intern, Dunwoody High School |
+| ![Ekaterina Rambaud](Team/ekaterina-rambaud.png) | ![Yu Fung David Wang](Team/david-wang.png) | |
+| Ekaterina Rambaud, Intern, Cambridge High School | Yu Fung David Wang, Intern, MSc student, Emory University |  |
 
 ## Shiraz University Alumni
 
