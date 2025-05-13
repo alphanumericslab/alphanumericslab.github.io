@@ -28,22 +28,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Ruby using ruby-build
+      - name: Update ruby-build
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends ruby-build
+          ruby_build_version=$(dpkg -s ruby-build | grep '^Version:' | awk '{print $2}')
+          echo "Current ruby-build version: $ruby_build_version"
+          sudo rm -rf /opt/rbenv/plugins/ruby-build # Remove the old installation
+          git clone https://github.com/rbenv/ruby-build.git /opt/rbenv/plugins/ruby-build
 
+      - name: Install Ruby using ruby-build
+        run: |
           ruby_version="3.1.4"
           install_path="/opt/hostedtoolcache/Ruby/$ruby_version/x64"
 
           mkdir -p "$install_path"
-          ruby-build "$ruby_version" "$install_path"
+          # Try building, if it fails, try a slightly different version
+          if ! ruby-build "$ruby_version" "$install_path"; then
+            echo "Failed to build $ruby_version. Trying 3.1.5..."
+            ruby_version="3.1.5"
+            install_path="/opt/hostedtoolcache/Ruby/$ruby_version/x64"
+            mkdir -p "$install_path"
+            ruby-build "$ruby_version" "$install_path"
+          fi
           touch "$install_path.complete"
+        id: install_ruby
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.4'
+          ruby-version: ${{ steps.install_ruby.outputs.ruby_version || '3.1.5' }} # Default to the version that likely succeeded
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
 
