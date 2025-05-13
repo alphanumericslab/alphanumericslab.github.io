@@ -3,8 +3,80 @@ layout: page
 title: About
 ---
 
-The [Alphanumerics Lab](https://alphanumericslab.github.io) is centered at [Emory University](https://www.emory.edu) [Department of Biomedical Informatics (DBMI)](https://med.emory.edu/departments/biomedical-informatics/index.html). Our research interests include the development of devices, algorithms and software for the acquisition and processing of biomedical signals and data. Together with our clinical associates, industrial collaborators and partners labs, we are committed to providing solutions and developing operational systems for real-world biomedical applications.
+## Alphanumerics Lab Manual
 
-The competence of our research team, the exceptional DBMI infrastructure and a direct access to one of the world's largest clinical datasets at Emory University has provided us a unique opportunity to contribute to different areas of Biomedical Informatics. Our current applications include cardiovascular systems and diseases, multichannel and multimodal patient monitoring systems, mobile and distributed healthcare systems.
+This document outlines how we work, collaborate, and grow as a team. It contains expectations, lab policies, and the lab’s PI approach to mentorship and the PhD process. Please read it carefully before joining the lab and refer back to it regularly.
 
-Some of the featured projects and job openings in our research lab are highlighted in this page. We highly welcome and actively seek interdisciplinary collaborations with other groups worldwide. Please feel free to contact us in case of interest.
+### Getting Started
+When you join a project, the PI will share a cloud-hosted folder with you (on Google Drive or OneDrive). Use this folder to store all your reports, presentations, notes, and related documents. We host LaTeX documents, reports, and manuscripts on Overleaf, and codebases are exclusively hosted on GitHub.com under the lab organization.
+
+Keep everything organized in the folders, and do not create duplicate or disorganized copies. For each project, maintain a single slide deck that you update as you go. When providing progress updates, add them to that deck and refer to it in your email. Do not send slide decks as email attachments. Always keep the master document online. We may pull them up and present them in meetings live. So keep them up to date and self-contained for presentation.
+
+Send me your GitHub.com ID as soon as possible. The PI will create a private repository for you under the lab’s GitHub organization. Push your code to that repository daily or several times a day as needed—even if the code is not complete. If it is on your laptop and not in the repo, it does not exist from the lab’s perspective. When choosing whether to keep something local or push it to the cloud/GitHub, ask yourself: “How much time can I afford to lose if my device crashes right now?” Cloud storage is not optional—it is mandatory lab practice. All results and code updates should be communicated by referring to your GitHub repo. Do not email code or data. No data, especially if patient-related, should be pushed to GitHub. The only exception is small, fully de-identified public samples used strictly for demo purposes. Make sure to seek permission for sharing any such samples before posting them online.
+
+No PHI or sensitive medical data should leave HIPAA-compliant storage, such as Emory’s OneDrive or the Emory BMI cluster. All cloud work must follow institutional data security requirements. If you are working on any PHI data on a local computer (with the PI’s prior written/electronic approval), make sure that the computer’s disk is encrypted. Check out how you can encrypt your computer depending on the OS.
+
+Do not share any datasets over email. Push them to the appropriate cloud folder and link them in your communication. Whether on the cluster or on the cloud, never overwrite the original data folder. Source and destination (result) folders should always be separated.
+
+All project documents and reports should live on Emory OneDrive, the BMI Google Workspace, or Overleaf. If you’re writing a paper or tech report, use Overleaf and keep it shared with the PI and your collaborators. Documents should stay online until you’re ready to submit them. Offline versions lead to confusion, incompatible copies, loss of updates, and inconsistencies.
+
+When naming documents, avoid generic names like “Document,” “Final version,” or “My Fellowship copy v3,” etc. These are not searchable or meaningful a week from now. Use filenames that include your full name and the project or submission type. For example, “reza-sameni-ecg-digitization-google-fellowship-2025,” or “reza-sameni-phd-proposal-2025.” Do not date files/codes manually in the cloud; contemporary cloud platforms track all changes and commit/change times automatically. Only use dated filenames when downloading files for external submissions or archiving.
+
+### Research Environment
+Projects in this lab belong to the lab, not individuals. This might sound strange, but all projects we do are team efforts funded by grants that we as a team (within and beyond our lab) worked hard to secure. Often, several students, postdocs, faculty, and collaborators have contributed to the preliminary data and hardware/software infrastructure behind a project. As you join, you build on what others started way before you joined, just like others will build on your work later. We all get credit for our contributions in publications and patents, but this is not a solo experience—the lab is a scientific enterprise just like a startup company. For the same reason, the intellectual property of the projects is owned by the lab and the people who contributed to it before and after others join the lab. The only exception is when the initiation of a project is by yourself or if you are funded by a fellowship or award that is independent of our existing projects. Please make sure to communicate this or any other intellectual property questions, issues, or concerns before joining the lab or as we go.
+
+Publication of code or data must be coordinated with the PI. All GitHub repositories for active projects will be private by default and may be made public based on funding agency policies or lab strategy. Patent and licensing rights are negotiated based on actual contributions. Authorship will follow standard academic guidelines based on contributions to the research question, design, implementation, analysis, and writing. Departing students remain on publications when their contributions are essential to the output.
+
+### Coding Practices
+Push code to GitHub daily. Avoid hardcoded paths in your code. Do not write file paths like `/Users/alex/data`. Use relative paths or config files. Code must be reproducible by others in the lab and beyond.
+
+Your code should not be written in isolation. It should be usable by the next person who joins the project and should be readable in the future by yourself and others. That means clean structure, documentation, modular design, and no reliance on local setups or local libraries. All data and code repositories must have a README file with the project title, contributors, setup/utilization procedures required to run the code, and a license file. No need for over-documentation. Just write it for your future self (in a week or months from now). We typically use the BSD 3-Clause License for our codebases, unless specified by the PI. Systematic programming is part of being a researcher, not just a coder.
+
+### Mentorship and Meetings
+Mentorship is adjusted based on your year in the program. Junior students (undergraduate and master’s students) get more frequent mentorship. For PhD students, in Year 1, we will have weekly 1:1 meetings. In Year 2, biweekly. Year 3, every three weeks. From Year 4 onward, we’ll meet monthly (at that point through your PhD, you wouldn't want to meet with me that often anyway…). These are your one-on-one meetings with the PI and do not include research team meetings, classes, or general office hours. If you need extra time with me outside of these for research or non-research-related talks, reach out and we’ll schedule it.
+
+Plan ahead for any support you need. If you want me or other faculty to write a recommendation letter, let us know at least one month in advance. Send me your updated CV and a draft of what you want highlighted. This guideline applies to all future professional interactions with me or others—whether asking for letters, feedback, or endorsements, you should always provide context and help the recommender help you.
+
+Make sure to have a professional CV and NIH/NSF biosketches available and up to date. Different funding opportunities may require biosketches of collaborators at the last moment, so you should always keep them updated.
+
+Share your presentations with me at least one week before you present. For major milestones like your proposal, PhD defense, or competitive fellowships, share your materials one month ahead to give me time to provide feedback. Plan early and communicate early.
+
+### PhD Process and Career Planning
+A PhD is not about finishing tasks. It’s about becoming an independent researcher, and the outcome of the PhD journey is not your thesis or publications—it is yourself as a knowledgeable professional in your field of research. You should be able to define problems, propose new ideas, implement and validate your solutions, and defend them objectively. More importantly, you will be able to communicate with people more efficiently and professionally. That’s the goal—whether you end up in academia, industry, or a startup.
+
+In my experience, in Europe and some other regions, PhD students often work on a deep, narrow, well-defined research problem. Once they meet program requirements, expected publications, and their advisor and committee approve, they defend. The focus is individual. In the U.S., PhD research is part of larger lab and institutional or even regional efforts. You’re not just solving one problem; you’re contributing to tools, systems, and infrastructure that will outlive your thesis and residency in a lab. For the PI, running a lab is like running a startup—there is constant effort to manage grants, recruit people, and align everyone’s efforts with commitments and deliverables. Your work helps make that possible, and others’ work enables you to do yours.
+
+There’s no one-size-fits-all answer to when you should defend your PhD. You need to meet the program’s formal requirements, but beyond that, it’s about timing your graduation with what’s next for you. If you're aiming for a faculty job or postdoc, you may want to defend early to strengthen your position on the job market. If you don’t have your next move lined up yet, it may make sense to stay enrolled a little longer while you apply or wrap up publications. These decisions can also be personal. Family, health, financial status, visa, or other life issues may affect your plans. Be open about these with me and communicate your future plans to ensure the availability of projects and funding. The same applies to your plans for internships—communicate with me early so that I can plan for the projects that you are involved in.
+
+The PhD process is already hard—don’t carry extra stress silently. If you’re feeling disconnected from your project, unhappy with your topic, or unsure whether this lab is the right fit for you, tell me. We can work on a transition plan or find ways to get you where you want to be. I’ll support you.
+
+### Communication
+If you email me and don’t hear back right away or even up to a week, it’s not a bad sign. You’re probably on the right track and on top of your research, and I’m likely handling teaching, grants, reviews, or other obligations. If it’s time-sensitive, follow up. If it’s truly urgent, include “URGENT” in your email subject line. For major time-bound issues and deadlines, send a reminder after 24 hours. That’s completely okay.
+
+Only use phone/text for absolute emergencies. If you need to schedule a Zoom or call to discuss research, just send me an email first. You can call me anytime 24/7, day or night, for personal emergencies—safety, family, health-related, immigration issues. For medical emergencies, always call 911 first.
+
+### Expectations for Growth
+As a graduate student or postdoc, you should be reading at least one scientific paper per day, within or beyond your research focus. This builds the depth and awareness you’ll need to publish and go beyond your specific focus. Also, skim textbooks—at least one per week. Use the library, borrow hard copies; digital copies never remain in our minds like good old hard copies. When you read textbooks, start by skimming through the table of contents, picking your favorite chapters and sections, and digging deeper when needed. This is, of course, different from textbooks you use for courses with homework and specific course requirements.
+
+Attend regular talks presented by labmates, and internal and external presenters. Listening to an hour-long talk is a unique opportunity to familiarize yourself with a new field or to extend your network.
+
+Keep detailed notes from meetings—technical, talks, and career-related. Self-notes, especially handwritten ones, help track your development and remind you what needs to get done and the context in which you heard about a topic. Keep your notes organized in your cloud folder.
+
+Your research focus will evolve. So will your skills and interests, the lab’s needs, and the available funding. In the early years, especially during lab rotations, use this time to explore what you’re good at and what you’re excited about. If you want to shift directions, let me know. If possible, I’ll help you do that—but note that shifts may take time due to current project deadlines or constraints, or may not be feasible.
+
+Whether you’re heading into academia or industry, plan your career early. The conferences/workshops you attend, the skills you develop, and the internships you pursue should align with your goals. In our one-on-one meetings, we’ll discuss your future path and what you need to get there. But it’s on you to initiate those plans and stay on top of them.
+
+
+### Code of Conduct
+We are committed to maintaining an open, respectful, and inclusive environment for everyone in the Alphanumerics Lab, in alignment with Emory University’s policies on equity and nondiscrimination. This includes adherence to Title IX, which prohibits discrimination on the basis of sex, as well as Emory’s Equal Opportunity and Discriminatory Harassment Policy.
+
+All lab members are expected to use inclusive language, respect differing perspectives, provide and receive constructive feedback professionally, and act with empathy, integrity, and accountability.
+
+Harassment, discrimination, sexual misconduct, retaliation, or other disruptive behavior—whether in person, online, or in lab communications—is not acceptable. Alleged violations may be reported confidentially to the PI or through official Emory channels, including the Office of Equity and Compliance at [equityandcompliance.emory.edu](https://equityandcompliance.emory.edu) and Title IX staff at [titleix.emory.edu](https://titleix.emory.edu). Consequences for violations may include informal conversations, formal warnings, removal from lab activities, or further action as appropriate.
+
+Our lab values transparency, collaboration, and mutual respect. The research journey includes both rewarding and challenging moments. We are committed to supporting one another and upholding the highest standards of scientific and professional conduct.
+
+Welcome to the team! Feel free to reach out if you have any questions.  
+
+—*Reza Sameni*
+
