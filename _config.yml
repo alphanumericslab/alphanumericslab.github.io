@@ -1,7 +1,6 @@
 title: The Alphanumerics Lab
 author:
   name: Copyright 2024, Reza Sameni
-  email:
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
