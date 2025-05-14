@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This document outlines how we work, collaborate, and grow as a team. It contains expectations, lab policies, and the lab's PI approach to mentorship and the PhD process. Please read it carefully before joining the lab and refer back to it regularly.
+This document outlines how we work, collaborate, and grow as a team. It contains expectations, lab policies, and the lab's PI approach to mentorship and the PhD process. **Please read it carefully before joining the lab and refer back to it regularly.**
 
 ### PhD Process and Career Planning
 A PhD is not about checking boxes, merely completing tasks or publising. It's about transforming into an independent, critical, and creative researcher. The true outcome of your PhD journey is not just your thesis or publications—it's you: a deeply trained professional equipped to identify real-world problems, propose novel ideas, rigorously test and validate solutions, and defend them with clarity and integrity. Equally important, you'll become a leader, effective communicator and team member—skills essential across all career paths, whether in academia, industry, policy, or entrepreneurship.
