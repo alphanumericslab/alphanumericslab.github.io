@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Members
+title: Team
 ---
 
 | ![Dr. Reza Sameni](Team/reza-sameni.png) |
 | :---: |
  [Dr Reza Sameni](https://sameni.info/), Lab Director <br> Associate Prof, Dept of BMI and BME, Emory University and Georgia Tech |
-
-## Team
 
 |  ![Sajjad Karimi](Team/sajjad-karimi.png)  | ![Somayyeh Mousavi](Team/somayyeh-mousavi.png) | ![Masoud Nateghi](Team/masoud-nateghi.png) |
 | :---: | :---: | :---: |
