@@ -3,20 +3,9 @@ layout: page
 title: Members
 ---
 
-## Lab Director
-
 | ![Dr. Reza Sameni](Team/reza-sameni.png) |
 | :---: |
- [Dr Reza Sameni](https://sameni.info/) <br> Associate Prof, Dept of BMI and BME, Emory University and Georgia Tech |
-
-## Mentors and Collaborators
-
-| ![Prof. Christian Jutten](Team/christian-jutten.jpg)  | ![Prof. Gari D. Clifford](Team/gari-clifford.jpg)  | ![Prof. Mohammad B. Shamsollahi](Team/mohammadbagher-shamsollahi.jpg)  |
-| :---: | :---: | :---: |
-| [Prof. Christian Jutten](http://www.gipsa-lab.fr/~christian.jutten/), Emeritus Prof of Université Grenoble Alpes | [Prof. Gari Clifford](http://gdclifford.info), Dept of BMI and BME, Emory University and Georgia Tech | [Prof. Mohammad-Bagher Shamsollahi](http://sharif.edu/~mbshams/), Sharif University of Technology |
-
-<!--- To be added |  To be added | To be added | To be added --->
-<!---  ... |  ... | ... | ... --->
+ [Dr Reza Sameni](https://sameni.info/), Lab Director <br> Associate Prof, Dept of BMI and BME, Emory University and Georgia Tech |
 
 ## Team
 
