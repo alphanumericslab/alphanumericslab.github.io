@@ -29,6 +29,8 @@ whitelist:
 includes_dir: 
  Resources/Papers
 
+baseurl: ""  # Add this to prevent deployment issues
+
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
