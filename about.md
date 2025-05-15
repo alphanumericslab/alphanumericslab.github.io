@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: Lab Manual
+menu_title: "About"
 ---
 
 This document outlines how we work, collaborate, and grow as a team. It contains expectations, lab policies, and the lab's principal investigator (PI) approach to mentorship and the PhD process. **Please read it carefully before joining the lab and refer back to it regularly.**
