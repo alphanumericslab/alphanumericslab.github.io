@@ -10,8 +10,8 @@ title: Team
 |  ![Sajjad Karimi](Team/sajjad-karimi.png)  | ![Somayyeh Mousavi](Team/somayyeh-mousavi.png) | ![Masoud Nateghi](Team/masoud-nateghi.png) |
 | :---: | :---: | :---: |
 |  Sajjad Karimi, Postdoc, Emory University | Somayyeh Mousavi, PhD student, Emory University | Massoud Nateghi, PhD student, Emory University |
-|  ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
-|  Mohammad Sina Hassannia, PhD student, Emory University | Mohammad Ahmad, MSc student, Georgia Tech |  |
+|  ![Mohammad Sina Hassannia](Team/mohammad-sina-hasannia.png)  | ![Yan Zhang](Team/yan-zhang.png) | ![Mohammad Ahmad](Team/mohammad-ahmad.png)  |
+|  Mohammad Sina Hassannia, PhD student, Emory University | Yan Zhang, PhD student, Emory University | Mohammad Ahmad, MSc graduate, Georgia Tech |
 
 ## Alumni
 
