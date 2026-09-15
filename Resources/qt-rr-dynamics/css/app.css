@@ -1,0 +1,263 @@
+/* QT-RR Dynamics interactive panels.
+   Scoped to .qtrr-*; the page shell and hub cards live in ../../projects.css. */
+
+/* ---------- the app ---------- */
+
+.qtrr-intro {
+  max-width: 62ch;
+}
+
+.qtrr-app {
+  --qtrr-gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.qtrr-panels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--qtrr-gap);
+}
+
+.qtrr-panel-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--qtrr-gap);
+}
+
+.qtrr-panel {
+  margin: 0;
+  padding: 0.5rem 0.6rem 0.6rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background: var(--global-bg-color);
+}
+
+.qtrr-panel figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+.qtrr-panel__title {
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+}
+
+.qtrr-panel__note {
+  font-size: 0.78em;
+  color: var(--global-text-color-light);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.qtrr-canvas {
+  display: block;
+  width: 100%;
+  height: 180px;
+  border-radius: 2px;
+}
+
+.qtrr-panel--hyst .qtrr-canvas { height: 260px; }
+.qtrr-panel--timeline .qtrr-canvas { height: 130px; }
+
+.qtrr-canvas--interactive {
+  cursor: ew-resize;
+  touch-action: none;
+}
+
+.qtrr-canvas--interactive:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 2px;
+}
+
+/* ---------- bars & controls ---------- */
+
+.qtrr-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.9rem;
+}
+
+.qtrr-bar--top {
+  justify-content: space-between;
+  margin-bottom: var(--qtrr-gap);
+}
+
+.qtrr-bar--controls {
+  margin-top: var(--qtrr-gap);
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background: var(--global-footer-bg-color);
+}
+
+.qtrr-subjects,
+.qtrr-speed {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+.qtrr-chip {
+  min-height: 2.1rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 0.82em;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.qtrr-chip:hover { border-color: var(--global-link-color); }
+
+.qtrr-chip.is-active {
+  border-color: var(--global-link-color);
+  background: var(--global-link-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.qtrr-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  background: var(--global-link-color);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.qtrr-btn__glyph { font-size: 0.9em; line-height: 1; }
+
+.qtrr-clock {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9em;
+}
+
+.qtrr-clock__total { color: var(--global-text-color-light); }
+
+.qtrr-status {
+  margin: 0;
+  font-size: 0.8em;
+  color: var(--global-text-color-light);
+}
+
+.qtrr-status.is-error { color: var(--global-text-color); }
+
+.qtrr-retry {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--global-link-color);
+  font: inherit;
+  font-size: 0.95em;
+  cursor: pointer;
+}
+
+.qtrr-toggle,
+.qtrr-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82em;
+  color: var(--global-text-color);
+  cursor: pointer;
+  min-height: 2.1rem;
+}
+
+.qtrr-field select {
+  padding: 0.15rem 0.3rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 1em;
+}
+
+.qtrr-details {
+  margin-top: var(--qtrr-gap);
+  font-size: 0.95em;
+}
+
+.qtrr-details > summary,
+.qtrr-methods > summary {
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--global-link-color);
+}
+
+.qtrr-details__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  padding: 0.6rem 0 0.2rem;
+}
+
+.qtrr-keys {
+  margin: 0.8rem 0 0;
+  font-size: 0.75em;
+  color: var(--global-text-color-light);
+}
+
+.qtrr-keys kbd {
+  padding: 0.05em 0.35em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.qtrr-methods {
+  margin: 1.5rem 0;
+  max-width: 68ch;
+}
+
+.qtrr-methods p {
+  font-size: 0.92em;
+}
+
+/* ---------- responsive ---------- */
+
+@media (min-width: 900px) {
+  .qtrr-panel-row { grid-template-columns: 1fr 1fr; }
+  .qtrr-panel--ecg .qtrr-canvas { height: 200px; }
+}
+
+@media (max-width: 640px) {
+  .qtrr-panel--hyst .qtrr-canvas { height: 230px; }
+
+  /* keep playback controls reachable without scrolling past the plots */
+  .qtrr-bar--controls {
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
+    margin-top: var(--qtrr-gap);
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.12);
+    padding-bottom: calc(0.6rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .qtrr-chip { min-height: 2.4rem; padding: 0.4rem 0.8rem; }
+  .qtrr-toggle, .qtrr-field { min-height: 2.4rem; }
+}

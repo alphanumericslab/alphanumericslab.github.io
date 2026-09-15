@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore ECG, QT–RR and T-wave amplitude dynamics during exercise and recovery in two de-identified recordings.">
+  <title>QT–RR Dynamics</title>
+  <link rel="stylesheet" href="./css/standalone.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/standalone.js" defer></script>
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <main class="package-page">
+    <header class="package-header">
+      <a href="https://sameni.org/">The Alphanumerics Lab</a>
+      <button type="button" id="package-theme" aria-pressed="false">Dark theme</button>
+    </header>
+    <h1>QT–RR Dynamics</h1>
+    <p class="package-subtitle">How the T wave follows heart rate through exercise and recovery</p>
+    <noscript>This interactive visualisation requires JavaScript. Enable JavaScript to load the plots.</noscript>
+
+<p class="qtrr-intro">
+  Repolarisation does not track heart rate instantaneously. As RR shortens through
+  exercise and lengthens again through recovery, QT and T-wave amplitude trace a
+  <em>loop</em> rather than a single curve — the same RR interval gives a different
+  T wave depending on which way the heart rate is moving. Press play to follow one
+  beat through 20 minutes of a stress test: all four panels share one clock.
+</p>
+
+<div class="qtrr-app" id="qtrr-app" data-initial-subject="1">
+
+  <div class="qtrr-bar qtrr-bar--top">
+    <div class="qtrr-subjects" role="radiogroup" aria-label="Subject">
+      <button type="button" class="qtrr-chip is-active" data-subject="1" role="radio" aria-checked="true">Subject 1</button>
+      <button type="button" class="qtrr-chip" data-subject="2" role="radio" aria-checked="false">Subject 2</button>
+    </div>
+    <p class="qtrr-status" id="qtrr-status" role="status" aria-live="polite">Loading…</p>
+  </div>
+
+  <div class="qtrr-panels">
+
+    <figure class="qtrr-panel qtrr-panel--ecg">
+      <figcaption>
+        <span class="qtrr-panel__title">ECG</span>
+        <span class="qtrr-panel__note" id="qtrr-ecg-note">5&nbsp;s snapshot, refreshed every 3&nbsp;s</span>
+      </figcaption>
+      <canvas id="qtrr-canvas-ecg" class="qtrr-canvas" role="img"
+              aria-label="Electrocardiogram snapshot"></canvas>
+    </figure>
+
+    <div class="qtrr-panel-row">
+      <figure class="qtrr-panel qtrr-panel--hyst">
+        <figcaption>
+          <span class="qtrr-panel__title">QT vs RR</span>
+          <span class="qtrr-panel__note" id="qtrr-qt-readout">&nbsp;</span>
+        </figcaption>
+        <canvas id="qtrr-canvas-qt" class="qtrr-canvas" role="img"
+                aria-label="QT interval against RR interval, hysteresis loop"></canvas>
+      </figure>
+
+      <figure class="qtrr-panel qtrr-panel--hyst">
+        <figcaption>
+          <span class="qtrr-panel__title">T-amp vs RR</span>
+          <span class="qtrr-panel__note" id="qtrr-tamp-readout">&nbsp;</span>
+        </figcaption>
+        <canvas id="qtrr-canvas-tamp" class="qtrr-canvas" role="img"
+                aria-label="T-wave amplitude against RR interval, hysteresis loop"></canvas>
+      </figure>
+    </div>
+
+    <figure class="qtrr-panel qtrr-panel--timeline">
+      <figcaption>
+        <span class="qtrr-panel__title">RR over time</span>
+        <span class="qtrr-panel__note">drag to scrub</span>
+      </figcaption>
+      <canvas id="qtrr-canvas-timeline" class="qtrr-canvas qtrr-canvas--interactive"
+              tabindex="0" role="slider"
+              aria-label="Playback position"
+              aria-valuemin="0" aria-valuemax="1200" aria-valuenow="0"></canvas>
+    </figure>
+
+  </div>
+
+  <div class="qtrr-bar qtrr-bar--controls">
+    <button type="button" class="qtrr-btn qtrr-btn--play" id="qtrr-play" aria-label="Play">
+      <span class="qtrr-btn__glyph" aria-hidden="true">▶</span>
+    </button>
+    <div class="qtrr-speed" role="radiogroup" aria-label="Playback speed">
+      <button type="button" class="qtrr-chip" data-rate="1" role="radio" aria-checked="false">1×</button>
+      <button type="button" class="qtrr-chip" data-rate="5" role="radio" aria-checked="false">5×</button>
+      <button type="button" class="qtrr-chip is-active" data-rate="10" role="radio" aria-checked="true">10×</button>
+      <button type="button" class="qtrr-chip" data-rate="20" role="radio" aria-checked="false">20×</button>
+    </div>
+    <p class="qtrr-clock"><span id="qtrr-time">00:00</span> <span class="qtrr-clock__total">/ 20:00</span></p>
+    <label class="qtrr-toggle"><input type="checkbox" id="qtrr-loop" checked> Loop</label>
+    <label class="qtrr-toggle"><input type="checkbox" id="qtrr-measure" checked> Show measurements</label>
+  </div>
+
+  <details class="qtrr-details">
+    <summary>Display options</summary>
+    <div class="qtrr-details__grid">
+      <label class="qtrr-toggle"><input type="checkbox" id="qtrr-scatter"> Raw beat scatter</label>
+      <label class="qtrr-toggle"><input type="checkbox" id="qtrr-trail"> Trail behind the point</label>
+      <label class="qtrr-toggle"><input type="checkbox" id="qtrr-peakaxis"> Time from peak HR</label>
+      <label class="qtrr-toggle"><input type="checkbox" id="qtrr-fullrange"> Full-range ECG</label>
+      <label class="qtrr-field">Snapshot
+        <select id="qtrr-window">
+          <option value="3">3 s</option>
+          <option value="5" selected>5 s</option>
+          <option value="10">10 s</option>
+        </select>
+      </label>
+      <label class="qtrr-field">Refresh
+        <select id="qtrr-latch">
+          <option value="2">2 s</option>
+          <option value="3" selected>3 s</option>
+          <option value="5">5 s</option>
+        </select>
+      </label>
+    </div>
+  </details>
+
+  <p class="qtrr-keys">
+    <kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> ±5 s · <kbd>Shift</kbd>+<kbd>←</kbd><kbd>→</kbd> ±30 s ·
+    <kbd>Home</kbd><kbd>End</kbd> · <kbd>1</kbd><kbd>2</kbd> subject · <kbd>M</kbd> measurements · <kbd>L</kbd> loop
+  </p>
+
+</div>
+
+<details class="qtrr-methods">
+  <summary>Methods &amp; data</summary>
+
+  <p>Two de-identified single-lead Holter recordings from a cardiac stress test, each
+  covering the ten minutes either side of peak heart rate. Time is abstract — there are
+  no dates or clock offsets. ECG is baseline-corrected and decimated to 100&nbsp;Hz.</p>
+
+  <p>Beat detection, quality filtering and robust outlier rejection were applied upstream;
+  the page plots what it is given and does not re-filter. The <em>smoothed</em> series
+  driving the loops is a 41-beat centred moving mean, so it uses beats either side of the
+  current one and is not a causal, real-time estimate. Between beats the smoothed series
+  is linearly interpolated so the point glides; raw per-beat values are never interpolated.</p>
+
+  <p>Marker positions come from the delineator's sample indices on a 10&nbsp;ms grid, while
+  the QT and T-amplitude figures quoted are the source measurements. The two disagree
+  slightly by construction — reconstructing QT from the marked endpoints differs from the
+  measured QT by up to 8&nbsp;ms. Where the delineator gave no point, or returned landmarks
+  out of order, the T markers and QT shading for that beat are suppressed rather than
+  repaired; the beat still contributes to the smoothed loops.</p>
+
+  <p>Exercise is shown in orange, recovery in blue, split at peak heart rate.</p>
+</details>
+
+    <footer class="package-footer">Interactive visualisation by <a href="https://sajjadkarimi.com/">Sajjad Karimi</a>.</footer>
+  </main>
+</body>
+</html>

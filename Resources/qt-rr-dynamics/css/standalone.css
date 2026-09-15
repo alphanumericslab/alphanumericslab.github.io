@@ -1,0 +1,31 @@
+/* Standalone shell only. Original app styles and plot code are unchanged. */
+:root {
+  color-scheme: light;
+  --global-bg-color: #fff;
+  --global-text-color: #494e52;
+  --global-text-color-light: #9ba1a6;
+  --global-border-color: #e8e9ea;
+  --global-link-color: #52adc8;
+  --global-footer-bg-color: #f2f3f3;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #474747;
+  --global-text-color: #fff;
+  --global-text-color-light: #bdc1c4;
+  --global-border-color: #bdc1c4;
+  --global-link-color: #0ea1c5;
+  --global-footer-bg-color: #474747;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--global-bg-color); color: var(--global-text-color); font: 16px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--global-link-color); }
+button, select, input { font: inherit; }
+.package-page { max-width: 1180px; margin: auto; padding: 1rem 1rem 2rem; }
+.package-header { display: flex; gap: 1rem; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--global-border-color); padding-bottom: .75rem; }
+.package-header button { border: 1px solid var(--global-border-color); border-radius: 4px; background: var(--global-footer-bg-color); color: var(--global-text-color); padding: .45rem .65rem; cursor: pointer; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); line-height: 1.2; margin-bottom: .4rem; }
+.package-subtitle { margin-top: 0; color: var(--global-text-color-light); }
+.package-footer { border-top: 1px solid var(--global-border-color); padding-top: 1rem; font-size: .85rem; }
+:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 3px; }
+@media (max-width: 640px) { .package-page { padding: .75rem .75rem 3rem; } .package-header { font-size: .85rem; } }
