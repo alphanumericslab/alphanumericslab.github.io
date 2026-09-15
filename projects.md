@@ -40,7 +40,7 @@ Ventricular repolarization does not follow heart rate instantaneously. When hear
 
 We treat this as a system identification problem. For each subject, a sequence model (linear, LSTM or Mamba) is trained on that person's own ambulatory Holter ECG to predict the beat-by-beat QT interval or T-wave amplitude from the preceding RR intervals, using a look-back window of up to two minutes. The trained model is then driven by a standardized, exercise-like heart-rate trajectory that is identical for every subject. Its output is a personalized hysteresis loop describing how that individual's repolarization adapts to heart rate under matched conditions, independent of the heart-rate pattern that happened to occur during the recording. In Holter data from post-myocardial infarction patients and controls, QT adaptation shows a memory of roughly one minute, and features taken from these standardized dynamic responses improve post-MI detection over conventional QT correction and average T-wave amplitude. An interactive visualization of QT–RR and T-amplitude–RR dynamics through a stress test is available at the link below. Read more:
 
-- [Interactive QT–RR dynamics visualization](./Resources/qt-rr-dynamics/)
+- [Interactive QT–RR dynamics visualization](./resources/qt-rr-dynamics/)
 - Karimi S, Koscova Z, Li Q, Clifford GD, Vaccarino V, Shah AJ, Sameni R. A System Identification Approach to Subject-Specific QT-RR Dynamics in ECG-Based Myocardial Infarction Classification. Computing in Cardiology, 2026.
 - Karimi S, Koscova Z, Li Q, Clifford GD, Vaccarino V, Shah AJ, Sameni R. A System Identification Approach to Analyzing T-Wave Amplitude Heart Rate Adaptation: A Case Study in Myocardial Infarction Detection.
 
@@ -110,7 +110,7 @@ Using advanced multichannel signal processing techniques, we have been able to e
 ### Multimodal physiological signal monitoring <a name="prescribe"></a>
 Understanding implicit beliefs and intentions has long been a focus in psychology, neuroscience, and artificial intelligence. Traditional methods, such as self-report questionnaires, depend on participants' conscious reflection, which can introduce biases and inaccuracies. Recent advancements in neurophysiological sensing technologies provide an opportunity to explore beliefs and intentions at a preconscious level, offering more accurate and objective assessments. The PRESCRIBE study employs a multimodal approach to capture physiological and cognitive data, specifically designed to study individualized belief evaluation. The study integrates various modalities, including electroencephalogram (EEG), electrocardiogram (ECG), seismocardiogram (SCG), respiration, blood pressure, photoplethysmogram (PPG), electrodermal activity (EDA), pupillometry, and eye-tracking data. The data collection process is synchronized across multiple systems: PsychoPy software for experiment control, BioSemi ActiveTwo for EEG data, Biopac for additional physiological signals, and EyeLink 1000 Plus for pupillometry and eye-tracking. Read more:
 
-* [Prescreening Depression Using Wearable Electrocardiogram and Photoplethysmogram Data from a Psycholinguistic Experiment](./Resources/Papers/ECG_PPG_Depression_Prescreening.pdf)
+* [Prescreening Depression Using Wearable Electrocardiogram and Photoplethysmogram Data from a Psycholinguistic Experiment](./resources/papers/ECG_PPG_Depression_Prescreening.pdf)
 
 * [A dashboard for multimodal physiological data feature visualization](https://alphanumerics.bmi.emory.edu/multimodal-physio-data-analysis/)
 

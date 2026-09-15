@@ -25,7 +25,7 @@ whitelist:
   - jekyll-redirect-from
 
 includes_dir: 
- Resources/Papers
+ resources/papers
 
 baseurl: ""  # Add this to prevent deployment issues
 
