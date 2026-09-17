@@ -65,6 +65,7 @@ In a continuum of research, our team pioneered the field of model-based cardiac 
 - Sameni, R, Shamsollahi, MB, Jutten, C and Clifford, GD, [A Nonlinear Bayesian Filtering Framework for ECG Denoising](https://doi.org/10.1109/TBME.2007.897817), IEEE Trans Biomed Eng. 2007 Dec; 54(12):2172-85. PMID: 18075033.
 - Sameni, R. (2017). [Online filtering using piecewise smoothness priors: Application to normal and abnormal electrocardiogram denoising](https://doi.org/10.1016/j.sigpro.2016.10.019), Signal Processing (Vol. 133, pp. 52–63), Elsevier BV.
 - Dumitru M, Li Q, Perez Alday E.A, Bahrami Rad A, Xue J, Albert D, Clifford G.D, and Sameni R (2022). [A Data-Driven Gaussian Process Filter for Electrocardiogram Denoising](https://doi.org/10.48550/arXiv.2301.02607). ISCE 2022, Lake Las Vegas Resort and Spa, 6-10, April 10
+- Pandey, R., Reyna, M. A., Koscova, Z., Clifford, G. D., & Sameni, R. (2026, September 20–23). [Detecting and correcting electrocardiogram limb-lead electrode swapping via deep learning](./resources/ecg-lead-swap/index.html). Computing in Cardiology 2026 (CinC 2026), Madrid, Spain.
 
 ### Multimodal cardiac monitoring <a name="multimodal_cardiovascular"></a>
 ![Cardiovascular health](./assets/images/cardiovascular.png)

@@ -1,0 +1,411 @@
+/* ===========================================================================
+   Detect & Correct — poster demo styles
+   Mobile-first, large tap targets, medical / ECG aesthetic.
+   =========================================================================== */
+
+:root {
+  --bg: #0b1020;
+  --bg-panel: #141b30;
+  --bg-panel-2: #1b2440;
+  --ink: #eef2ff;
+  --ink-dim: #9aa7c7;
+  --line: #2a3557;
+  --accent: #4da3ff;
+  --accent-ink: #06122a;
+  --good: #34d399;
+  --good-bg: #0f2e24;
+  --bad: #f87171;
+  --bad-bg: #331416;
+  --warn: #fbbf24;
+  --ecg-trace: #35e08f;
+  --ecg-grid: rgba(255, 90, 90, 0.16);
+  --ecg-grid-strong: rgba(255, 90, 90, 0.30);
+  --ecg-bg: #0a0f1e;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --maxw: 560px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: max(16px, env(safe-area-inset-top)) 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3 { margin: 0 0 8px; line-height: 1.15; }
+h1 { font-size: 1.5rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.25rem; }
+p { margin: 0 0 12px; color: var(--ink-dim); line-height: 1.5; }
+.muted { color: var(--ink-dim); }
+.tiny { font-size: 0.8rem; }
+
+/* ---- Header ---- */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  min-height: 40px;
+}
+.topbar .back {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.topbar .crumb {
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+}
+
+/* ---- Cards / panels ---- */
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+/* ---- Home / case picker ---- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 28px 20px 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--ecg-bg);
+  box-shadow: var(--shadow);
+}
+.hero > * { position: relative; z-index: 1; }
+.hero h1 { color: #eef2ff; }
+
+/* Animated ECG-monitor backdrop: grid + a looping heartbeat trace. */
+.hero-ecg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(var(--ecg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ecg-grid) 1px, transparent 1px),
+    linear-gradient(var(--ecg-grid-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ecg-grid-strong) 1px, transparent 1px);
+  background-size: 8px 8px, 8px 8px, 40px 40px, 40px 40px;
+}
+.hero-ecg::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 90px;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230 90'%3E%3Cpath d='M0,45 L36,45 L44,40 L50,34 L56,40 L64,45 L80,45 L88,50 L94,50 L98,8 L104,80 L110,48 L118,45 L136,45 L146,38 L156,30 L166,38 L176,45 L230,45' fill='none' stroke='%2335e08f' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 230px 90px;
+  opacity: 0.55;
+  animation: ecgScroll 4s linear infinite;
+}
+@keyframes ecgScroll {
+  from { background-position-x: 0; }
+  to { background-position-x: -230px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-ecg::after { animation: none; }
+}
+
+.hero .badge {
+  display: inline-block;
+  background: rgba(10, 15, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--ecg-trace);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.case-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  width: 100%;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.08s ease, border-color 0.15s ease;
+}
+.case-card:active { transform: scale(0.99); }
+.case-card:hover { border-color: var(--accent); }
+.case-card .num {
+  flex: 0 0 auto;
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  font-weight: 700;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--line);
+  color: var(--accent);
+}
+.case-card .meta { flex: 1; min-width: 0; }
+.case-card .meta .t { font-weight: 650; }
+.case-card .chev { color: var(--ink-dim); font-size: 1.3rem; }
+
+/* ---- Prominent quiz cards (About section) ---- */
+.about-quiz-row .case-card {
+  background: #0a0f1e;
+  border: 1px solid #2a3557;
+  padding: 24px 20px;
+}
+.about-quiz-row .case-card, .about-quiz-row .case-card * { color: #fff; }
+.about-quiz-row .case-card:hover { border-color: #4da3ff; }
+.about-quiz-row .case-card .num {
+  width: 48px; height: 48px;
+  background: #4da3ff;
+  border: none;
+  font-size: 1.15rem;
+  color: #06122a;
+}
+.about-quiz-row .case-card .meta .t { font-size: 1.3rem; font-weight: 800; }
+.about-quiz-row .case-card .ecg-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.about-quiz-row .case-card .chev { color: rgba(255,255,255,0.6); }
+
+/* ---- Buttons ---- */
+.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--bg-panel-2);
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 16px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.08s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:active { transform: scale(0.98); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.ghost { background: transparent; }
+.btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+.btn-stack { display: grid; gap: 12px; margin-top: 8px; }
+
+.choice { text-align: left; position: relative; }
+.choice.selected { border-color: var(--accent); }
+.choice.correct { border-color: var(--good); background: var(--good-bg); }
+.choice.wrong { border-color: var(--bad); background: var(--bad-bg); }
+
+/* ---- ECG plot ---- */
+.ecg-wrap {
+  background: var(--ecg-bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  overflow-x: auto;
+}
+.ecg-canvas { display: block; width: 100%; height: auto; }
+.ecg-caption {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.8rem; color: var(--ink-dim); margin: 8px 2px 0;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; font-weight: 600;
+  padding: 4px 10px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--bg-panel-2);
+}
+.pill.recorded { color: var(--warn); }
+.pill.corrected { color: var(--good); }
+
+/* ---- Result banner ---- */
+.result-banner {
+  display: flex; align-items: center; gap: 12px;
+  border-radius: 14px; padding: 14px 16px; margin-bottom: 16px;
+  font-weight: 700; font-size: 1.15rem;
+  border: 1px solid var(--line);
+}
+.result-banner.good { background: var(--good-bg); border-color: var(--good); color: var(--good); }
+.result-banner.bad { background: var(--bad-bg); border-color: var(--bad); color: var(--bad); }
+.result-banner.neutral { background: var(--bg-panel-2); color: var(--ink); }
+.result-banner .ico { font-size: 1.4rem; }
+
+/* ---- Prediction readout ---- */
+.readout { display: grid; gap: 10px; }
+.readout .row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; padding-bottom: 10px; border-bottom: 1px dashed var(--line);
+}
+.readout .row:last-child { border-bottom: 0; padding-bottom: 0; }
+.readout .k { color: var(--ink-dim); font-size: 0.9rem; }
+.readout .v { font-weight: 700; text-align: right; }
+.readout .v .sub { display: block; font-weight: 500; font-size: 0.8rem; color: var(--ink-dim); }
+
+/* ---- Probability bars ---- */
+.probs { display: grid; gap: 8px; margin-top: 6px; }
+.prob {
+  display: grid; grid-template-columns: 92px 1fr 48px; align-items: center; gap: 10px;
+  font-size: 0.85rem;
+}
+.prob .lab { color: var(--ink-dim); }
+.prob .bar { height: 10px; border-radius: 6px; background: var(--bg-panel-2); overflow: hidden; }
+.prob .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 6px; transition: width 0.5s ease; }
+.prob.top .lab { color: var(--ink); font-weight: 650; }
+.prob.top .bar > span { background: var(--good); }
+.prob .val { text-align: right; font-variant-numeric: tabular-nums; }
+
+details.more { margin-top: 12px; }
+details.more > summary {
+  cursor: pointer; color: var(--accent); font-weight: 600; font-size: 0.9rem;
+  list-style: none; padding: 6px 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+
+/* ---- Disclaimers ---- */
+.notice {
+  font-size: 0.82rem; line-height: 1.45;
+  border-left: 3px solid var(--warn);
+  background: rgba(251, 191, 36, 0.08);
+  padding: 10px 12px; border-radius: 8px; color: var(--ink-dim);
+  margin-bottom: 12px;
+}
+.notice.strong { border-left-color: var(--bad); background: rgba(248, 113, 113, 0.08); }
+
+.site-disclaimer {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 14px 16px calc(16px + env(safe-area-inset-bottom));
+  font-size: 0.75rem;
+  color: var(--ink-dim);
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+/* ---- Section label ---- */
+.section-label {
+  text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: 0.72rem; color: var(--ink-dim); font-weight: 700;
+  margin: 4px 0 10px;
+}
+
+.prompt { font-size: 1.15rem; font-weight: 650; color: var(--ink); margin: 4px 0 12px; }
+
+.fade-in { animation: fadeIn 0.25s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ---- About project section (home page) ---- */
+.about-wide {
+  width: 100vw;
+  max-width: 960px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+.about-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.about-card, .about-card * { color: #000; }
+.about-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 0 0 6px;
+}
+.about-subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+.about-full { margin-bottom: 20px; }
+.about-quiz-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.about-block { margin-bottom: 20px; }
+.about-block-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.about-block-subtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.about-block-subtitle ol, .about-block-subtitle ul {
+  margin: 4px 0 0;
+  padding-left: 1.2em;
+}
+.about-figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.about-figures figure, .about-full { margin: 0; }
+.about-figures img, .about-full img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid var(--line);
+}
+.about-figures figcaption {
+  font-size: 0.78rem;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* ---- Light theme fallback (viewer preference) ---- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #eef1f8;
+    --bg-panel: #ffffff;
+    --bg-panel-2: #f2f5fc;
+    --ink: #101728;
+    --ink-dim: #55617e;
+    --line: #d8deee;
+    --accent-ink: #ffffff;
+    --ecg-bg: #0a0f1e; /* keep the trace dark — reads best for ECG */
+  }
+  .site-disclaimer { color: var(--ink-dim); }
+}
