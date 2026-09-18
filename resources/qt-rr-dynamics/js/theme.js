@@ -10,6 +10,10 @@
 
 const EXERCISE_BASE = [217, 83, 25];
 const RECOVERY_BASE = [0, 114, 189];
+/* T-wave markers need to stay legible on the orange exercise curve, the blue
+   recovery curve and the grey history alike, so they get their own hue rather
+   than borrowing a phase colour. */
+const MARKER_BASE = [0, 140, 60];
 const MIN_CONTRAST = 3;
 
 let probe = null;
@@ -94,6 +98,7 @@ export function readPalette() {
     accent,
     exercise: dark ? readable(EXERCISE_BASE, background) : EXERCISE_BASE,
     recovery: dark ? readable(RECOVERY_BASE, background) : RECOVERY_BASE,
+    marker: dark ? readable(MARKER_BASE, background) : MARKER_BASE,
     /* Neutral trace colour: the template's muted text, nudged for weight. */
     trace: dark ? muted : variable(styles, '--global-text-color-light', '#9ba1a6'),
     /* The template sets its body typeface on <body>, not on <html> (where the

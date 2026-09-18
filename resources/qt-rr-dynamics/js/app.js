@@ -11,6 +11,7 @@ import { Clock } from './clock.js';
 import { Snapshot, sampleAt } from './sync.js';
 import { identifiedBeat, validity } from './overlays.js';
 import { EcgPanel } from './panel-ecg.js';
+import { BeatPanel } from './panel-beats.js';
 import { HysteresisPanel } from './panel-hysteresis.js';
 import { TimelinePanel } from './panel-timeline.js';
 import { formatClock, formatNumber } from './draw.js';
@@ -58,6 +59,10 @@ async function start(root) {
     trailSeconds: 8,
     fromPeak: false,
     fullRange: false,
+    ecgView: 'beats',
+    /* The beat panel derives its grid spacing from the playback rate, so it
+       needs to see rate changes. */
+    rate: 10,
   };
 
   let palette = readPalette();
@@ -73,6 +78,7 @@ async function start(root) {
   const snapshot = new Snapshot({ windowSeconds: 5, latchMs: 3000, duration: 1200 });
 
   const ecg = new EcgPanel(element('qtrr-canvas-ecg'));
+  const beatsPanel = new BeatPanel(element('qtrr-canvas-beats'));
   const qt = new HysteresisPanel(element('qtrr-canvas-qt'), {
     yKey: 'qtS', yLabel: 'QT (ms)', yDigits: 0, axisKey: 'qt',
   });
@@ -96,7 +102,7 @@ async function start(root) {
     onScrubEnd: () => { clock.endScrub(); writeUrl(); },
   });
 
-  const panels = [ecg, qt, tamp, timeline];
+  const panels = [ecg, beatsPanel, qt, tamp, timeline];
 
   function setStatus(text, isError) {
     ui.status.textContent = text;
@@ -192,7 +198,8 @@ async function start(root) {
     const state = sampleAt(dataset.beats, time, hint);
     hint = state.index;
 
-    ecg.render(snapshot, { force: force || moved });
+    if (options.ecgView === 'beats') beatsPanel.render(time);
+    else ecg.render(snapshot, { force: force || moved });
     qt.render(time, hint);
     tamp.render(time, hint);
     timeline.render(time, hint, snapshot);
@@ -208,8 +215,10 @@ async function start(root) {
     ui.tampReadout.textContent = 'RR ' + Math.round(state.rrS) + ' ms · T-amp '
       + state.tampS.toFixed(3) + ' mV · smoothed';
 
-    /* ECG readouts describe the snapshot, which lags playback by design. */
-    updateEcgNote(time);
+    /* ECG readouts describe whichever view is on screen: the strip's note is
+       about its lagging snapshot, the beat view's about the averaging window. */
+    if (options.ecgView === 'beats') updateBeatNote(time);
+    else updateEcgNote(time);
   }
 
   function updateEcgNote(time) {
@@ -233,12 +242,50 @@ async function start(root) {
       + ' · ' + lag.toFixed(1) + ' s behind' + detail;
   }
 
+  function updateBeatNote(time) {
+    const curve = beatsPanel.lastCurve;
+    /* Describes the curve actually on screen: it is averaged over the beats
+       within +/-30 s of the playhead, clipped at the ends of the record. */
+    const from = Math.max(0, time - 30);
+    const to = Math.min(1200, time + 30);
+    let detail = '';
+    if (curve) {
+      detail = ' \u00b7 ' + curve.beats + ' beats averaged';
+      if (options.showMeasurements) {
+        if (curve.tOffMs !== null && curve.qrsOnMs !== null) {
+          detail += ' \u00b7 QT ' + Math.round(curve.tOffMs - curve.qrsOnMs) + ' ms (from markers)';
+        } else {
+          detail += ' \u00b7 T markers unavailable';
+        }
+      }
+    }
+    ui.ecgNote.textContent = formatClock(from) + '\u2013' + formatClock(to)
+      + ' \u00b7 \u00b130 s window' + detail;
+  }
+
   function repaint() {
     for (const panel of panels) panel.setOptions(options);
     render(clock.time, { force: true });
   }
 
   /* --- URL state --------------------------------------------------------- */
+
+  /* Switches the ECG panel between the 5 s strip and the averaged-beat view. */
+  function applyView(view) {
+    options.ecgView = view === 'strip' ? 'strip' : 'beats';
+    root.querySelectorAll('[data-ecgview]').forEach((chip) => {
+      const active = chip.dataset.ecgview === options.ecgView;
+      chip.classList.toggle('is-active', active);
+      chip.setAttribute('aria-checked', active ? 'true' : 'false');
+    });
+    element('qtrr-canvas-ecg').hidden = options.ecgView !== 'strip';
+    element('qtrr-canvas-beats').hidden = options.ecgView !== 'beats';
+  }
+
+  function readViewParam() {
+    const raw = new URLSearchParams(window.location.search).get('view');
+    return raw === 'strip' ? 'strip' : 'beats';
+  }
 
   function readSubjectParam(root) {
     const params = new URLSearchParams(window.location.search);
@@ -261,6 +308,7 @@ async function start(root) {
   function writeUrl() {
     const params = new URLSearchParams(window.location.search);
     params.set('subject', String(subject));
+    params.set('view', options.ecgView);
     params.set('t', clock.time.toFixed(1));
     const url = window.location.pathname + '?' + params.toString();
     window.history.replaceState(null, '', url);
@@ -280,11 +328,21 @@ async function start(root) {
   root.querySelectorAll('[data-rate]').forEach((chip) => {
     chip.addEventListener('click', () => {
       clock.setRate(Number(chip.dataset.rate));
+      options.rate = Number(chip.dataset.rate);
+      beatsPanel.invalidate();
       root.querySelectorAll('[data-rate]').forEach((other) => {
         const active = other === chip;
         other.classList.toggle('is-active', active);
         other.setAttribute('aria-checked', active ? 'true' : 'false');
       });
+    });
+  });
+
+  root.querySelectorAll('[data-ecgview]').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      applyView(chip.dataset.ecgview);
+      writeUrl();
+      repaint();
     });
   });
 
@@ -352,6 +410,7 @@ async function start(root) {
 
   /* --- go ---------------------------------------------------------------- */
 
+  applyView(readViewParam());
   await selectSubject(subject, { force: true });
   clock.seek(initialTime);
   syncPlayButton();

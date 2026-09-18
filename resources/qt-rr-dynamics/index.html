@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore ECG, QT–RR and T-wave amplitude dynamics during exercise and recovery in two de-identified recordings.">
-  <title>QT–RR Dynamics</title>
+  <title>Heart Rate Memory: QT and T-Wave Dynamics</title>
   <link rel="stylesheet" href="./css/standalone.css">
   <link rel="stylesheet" href="./css/app.css">
   <script src="./js/standalone.js" defer></script>
@@ -16,16 +16,24 @@
       <a href="https://sameni.org/">The Alphanumerics Lab</a>
       <button type="button" id="package-theme" aria-pressed="false">Dark theme</button>
     </header>
-    <h1>QT–RR Dynamics</h1>
+    <h1>Heart Rate Memory: QT and T-Wave Dynamics</h1>
     <p class="package-subtitle">How the T wave follows heart rate through exercise and recovery</p>
     <noscript>This interactive visualisation requires JavaScript. Enable JavaScript to load the plots.</noscript>
 
 <p class="qtrr-intro">
-  Repolarisation does not track heart rate instantaneously. As RR shortens through
-  exercise and lengthens again through recovery, QT and T-wave amplitude trace a
-  <em>loop</em> rather than a single curve — the same RR interval gives a different
-  T wave depending on which way the heart rate is moving. Press play to follow one
-  beat through 20 minutes of a stress test: all four panels share one clock.
+  The heart’s electrical recovery adapts gradually to changes in heart rate. This delay
+  creates distinct QT–RR and T-wave amplitude–RR paths during exercise and recovery.
+  Explore these dynamics in the synchronized plots below. Our research uses personalized
+  models to characterize this adaptation and improve detection of prior myocardial
+  infarction.
+</p>
+
+<p class="qtrr-intro qtrr-note">
+  <strong>What is on this page:</strong> recorded data only. Two de-identified stress-test
+  recordings are played back beat by beat, and every curve below is measured from those
+  recordings. The personalized models described in the papers are a separate step in the
+  research: they are driven by a <em>standardized</em> heart-rate input so that responses
+  can be compared across people. No model-generated response appears here.
 </p>
 
 <div class="qtrr-app" id="qtrr-app" data-initial-subject="1">
@@ -43,10 +51,18 @@
     <figure class="qtrr-panel qtrr-panel--ecg">
       <figcaption>
         <span class="qtrr-panel__title">ECG</span>
-        <span class="qtrr-panel__note" id="qtrr-ecg-note">5&nbsp;s snapshot, refreshed every 3&nbsp;s</span>
+        <span class="qtrr-viewtoggle" role="radiogroup" aria-label="ECG view">
+          <button type="button" class="qtrr-chip qtrr-chip--mini" data-ecgview="strip"
+                  role="radio" aria-checked="false">Strip</button>
+          <button type="button" class="qtrr-chip qtrr-chip--mini is-active" data-ecgview="beats"
+                  role="radio" aria-checked="true">Averaged beats</button>
+        </span>
+        <span class="qtrr-panel__note" id="qtrr-ecg-note">&plusmn;30&nbsp;s averaging window</span>
       </figcaption>
-      <canvas id="qtrr-canvas-ecg" class="qtrr-canvas" role="img"
+      <canvas id="qtrr-canvas-ecg" class="qtrr-canvas" role="img" hidden
               aria-label="Electrocardiogram snapshot"></canvas>
+      <canvas id="qtrr-canvas-beats" class="qtrr-canvas qtrr-canvas--beats" role="img"
+              aria-label="Averaged beats aligned on the R-peak"></canvas>
     </figure>
 
     <div class="qtrr-panel-row">
@@ -148,8 +164,43 @@
   out of order, the T markers and QT shading for that beat are suppressed rather than
   repaired; the beat still contributes to the smoothed loops.</p>
 
+  <p>The <em>averaged beats</em> view takes every beat within &plusmn;30&nbsp;s of the current
+  moment, aligns them on the R-peak and averages them. Each curve spans &minus;25&nbsp;% to
+  +75&nbsp;% of the average RR of the minute it sits in, so it ends three quarters of the
+  way through the cycle. That keeps the next beat out of the average: always its QRS, and
+  its P wave too wherever diastole is long enough. Near peak heart rate it is not &mdash;
+  there the T wave itself runs past where the next P wave begins, so the two genuinely
+  overlap and no choice of window can separate them.</p>
+
+  <p>The time axis is locked for the whole record at the largest smoothed RR,
+  so curves stay comparable from the first to the last; a curve recorded at a fast heart
+  rate is simply shorter. Earlier curves stay on screen in grey, and the T-peak and T-end
+  markers are drawn in green so they read against the orange, the blue and the grey
+  alike.</p>
+
   <p>Exercise is shown in orange, recovery in blue, split at peak heart rate.</p>
+
+  <p><strong>Recorded, not modelled.</strong> Everything drawn on this page is measured
+  from the two recordings: the beats, the intervals, the loops and the averaged beats are
+  all observed data from a real stress test. The research goes a step further and fits a
+  personalized model per participant, then drives every model with the same standardized
+  rest&ndash;exercise&ndash;recovery heart-rate input so that the resulting responses are
+  comparable between people and can be used as features for classification. Those
+  standardized, model-generated responses are described in the papers below and are not
+  shown here.</p>
 </details>
+
+<section class="qtrr-readmore">
+  <h2>Read more</h2>
+  <ul>
+    <li>Karimi S, Koscova Z, Li Q, Clifford GD, Vaccarino V, Shah AJ, Sameni R.
+      <em>A System Identification Approach to Subject-Specific QT-RR Dynamics in ECG-Based
+      Myocardial Infarction Classification.</em> Computing in Cardiology, 2026.</li>
+    <li>Karimi S, Koscova Z, Li Q, Clifford GD, Vaccarino V, Shah AJ, Sameni R.
+      <em>A System Identification Approach to Analyzing T-Wave Amplitude Heart Rate
+      Adaptation: A Case Study in Myocardial Infarction Detection.</em></li>
+  </ul>
+</section>
 
     <footer class="package-footer">Interactive visualisation by <a href="https://sajjadkarimi.com/">Sajjad Karimi</a>.</footer>
   </main>

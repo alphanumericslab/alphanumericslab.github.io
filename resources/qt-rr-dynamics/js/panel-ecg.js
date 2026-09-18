@@ -232,7 +232,7 @@ function drawMarker(ctx, x, y, kind, palette) {
   } else if (kind === MARKER_KINDS.KIND_T_TIE) {
     /* T-peak and T-end fell on the same 10 ms sample: one combined glyph, so a
        rounding tie never looks like a single missing landmark. */
-    ctx.fillStyle = cssColor(palette.exercise);
+    ctx.fillStyle = cssColor(palette.marker);
     ctx.beginPath();
     ctx.moveTo(x, y - 4.5);
     ctx.lineTo(x + 4, y);
@@ -241,12 +241,12 @@ function drawMarker(ctx, x, y, kind, palette) {
     ctx.closePath();
     ctx.fill();
   } else if (kind === MARKER_KINDS.KIND_T_PEAK) {
-    ctx.fillStyle = cssColor(palette.recovery);
+    ctx.fillStyle = cssColor(palette.marker);
     ctx.beginPath();
     ctx.arc(x, y, 2.6, 0, Math.PI * 2);
     ctx.fill();
   } else if (kind === MARKER_KINDS.KIND_T_OFF) {
-    ctx.strokeStyle = cssColor(palette.recovery);
+    ctx.strokeStyle = cssColor(palette.marker);
     ctx.beginPath();
     ctx.moveTo(x, y - 4);
     ctx.lineTo(x, y + 4);
