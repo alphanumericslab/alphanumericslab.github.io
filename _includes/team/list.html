@@ -2,8 +2,7 @@
 <ul class="people-list">
 {%- for p in include.people %}
 <li class="people-row">
-{%- assign img = p.thumb | default: p.photo %}
-<img class="people-row-photo" src="{{ img | relative_url }}" alt="{{ p.name | escape }}" loading="lazy">
+<img class="people-row-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name | escape }}" loading="lazy">
 <div class="people-row-text">
 <p class="people-row-head"><span class="people-row-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}</span>{% if p.years %}<span class="people-row-years">{{ p.years | escape }}</span>{% endif %}</p>
 {%- if p.position and p.position != "" %}

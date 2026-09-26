@@ -18,6 +18,8 @@ Source for [sameni.org](https://sameni.org), the website of the Alphanumerics La
 
 To add someone to the team, copy an existing entry in `_data/team.yml`, change the fields, and add their photo to `Team/`. Moving a person from `members` to `alumni` moves them on the page.
 
+All headshots are shown at the same size (a 160 px square, set by `--photo` in `assets/css/main.css`). The original photo file is used as-is and the browser crops it to a square, keeping the upper part of the image, so tightly framed headshots look best.
+
 On the Projects page, the contents list at the top is styled by the `{: .toc }` line directly under it. Section anchors (`<a name="...">`) are what the list links to, so keep them when editing headings.
 
 Add `math: true` to a page's front matter to load MathJax.

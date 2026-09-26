@@ -389,31 +389,40 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .prose h2, .prose h3 { scroll-margin-top: 1.5rem; }
 
 /* ---------- Team ---------- */
-.prose .director {
-  display: grid;
-  grid-template-columns: 8rem 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  margin: 0 0 1rem;
-}
-.prose .director p,
-.prose .person p,
-.prose .people-row p { margin: 0; }
+/* Every headshot (director, members, alumni) is shown at the same size.
+   The original image files are used as-is; the browser crops them to a
+   square with object-fit, so nothing is resized or re-saved. */
+:root { --photo: 10rem; }
 
 .prose .director-photo,
 .prose .person-photo,
 .prose .people-row-photo {
   display: block;
+  width: var(--photo);
+  height: var(--photo);
+  max-width: none;
   margin: 0;
   padding: 0;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 0 0 1px var(--rule);
 }
-.prose .director-photo { width: 8rem; }
+
+.prose .director,
+.prose .people-row {
+  display: grid;
+  grid-template-columns: var(--photo) 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+}
+.prose .director { margin-bottom: 1rem; }
+.prose .director p,
+.prose .person p,
+.prose .people-row p { margin: 0; }
+
 .director-name { font-weight: 600; font-size: 1.1875rem; }
 .director-role { color: var(--ink); margin-top: 0.15rem !important; }
 .director-detail { color: var(--muted); font-size: 0.9375rem; margin-top: 0.15rem !important; }
@@ -423,26 +432,21 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   padding: 0;
   margin: 0 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, var(--photo));
+  justify-content: space-between;
   gap: 1.75rem 1.25rem;
 }
-.prose .person { margin: 0; padding: 0; }
-.prose .person-photo { width: 100%; max-width: 12rem; margin-bottom: 0.7rem; }
+.prose .person { margin: 0; padding: 0; width: var(--photo); }
+.prose .person-photo { margin-bottom: 0.7rem; }
 .person-name { font-weight: 600; line-height: 1.35; }
 .person-role { color: var(--muted); font-size: 0.875rem; line-height: 1.45; margin-top: 0.2rem !important; }
 
 .prose ul.people-list { list-style: none; padding: 0; margin: 0; }
 .prose .people-row {
-  display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 1.35rem;
-  align-items: start;
-  margin: 0;
-  padding: 1.1rem 0;
+  padding: 1.25rem 0;
   border-top: 1px solid var(--rule);
 }
 .prose .people-row:first-child { border-top: 0; padding-top: 0.25rem; }
-.prose .people-row-photo { width: 6.5rem; }
 .people-row-head {
   display: flex;
   flex-wrap: wrap;
@@ -495,11 +499,9 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
   .page-title { font-size: 1.625rem; }
   .hero { margin-bottom: 2rem; }
-  .prose .director { grid-template-columns: 6rem 1fr; gap: 1rem; }
-  .prose .director-photo { width: 6rem; }
-  .prose ul.people { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
-  .prose .people-row { grid-template-columns: 4.75rem 1fr; gap: 1rem; }
-  .prose .people-row-photo { width: 4.75rem; }
+  .prose .director,
+  .prose .people-row { grid-template-columns: 1fr; gap: 0.85rem; align-items: start; }
+  .prose ul.people { justify-content: space-between; gap: 1.5rem 0.75rem; }
   .prose ul.toc { columns: 1; }
 }
 
