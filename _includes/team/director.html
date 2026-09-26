@@ -1,0 +1,10 @@
+{%- comment -%} Lab director card. Data: _data/team.yml → director {%- endcomment -%}
+{%- assign d = site.data.team.director -%}
+<div class="director">
+<img class="director-photo" src="{{ d.photo | relative_url }}" alt="{{ d.alt | default: d.name | escape }}" loading="lazy">
+<div class="director-text">
+<p class="director-name">{% if d.url %}<a href="{{ d.url }}">{{ d.name | escape }}</a>{% else %}{{ d.name | escape }}{% endif %}</p>
+<p class="director-role">{{ d.role | escape }}</p>
+<p class="director-detail">{{ d.detail | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+</div>
+</div>

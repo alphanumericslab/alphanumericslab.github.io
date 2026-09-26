@@ -1,14 +1,15 @@
 ---
 layout: base
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+<article class="page">
+  {%- assign page_title = page.title | strip -%}
+  {%- if page_title != "" -%}
+  <header class="page-header">
+    <h1 class="page-title">{{ page_title | escape }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle | escape }}</p>{% endif -%}
   </header>
-
-  <div class="post-content">
+  {%- endif -%}
+  <div class="prose">
     {{ content }}
   </div>
-
 </article>

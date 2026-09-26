@@ -1,0 +1,17 @@
+{%- comment -%} Detailed list. Usage: {% include team/list.html people=site.data.team.shiraz_alumni %} {%- endcomment -%}
+<ul class="people-list">
+{%- for p in include.people %}
+<li class="people-row">
+<img class="people-row-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name | escape }}" loading="lazy">
+<div class="people-row-text">
+<p class="people-row-head"><span class="people-row-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}</span>{% if p.years %}<span class="people-row-years">{{ p.years | escape }}</span>{% endif %}</p>
+{%- if p.position and p.position != "" %}
+<p class="people-row-position">{{ p.position | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+{%- endif %}
+{%- if p.research and p.research != "" %}
+<p class="people-row-research">{{ p.research | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+{%- endif %}
+</div>
+</li>
+{%- endfor %}
+</ul>

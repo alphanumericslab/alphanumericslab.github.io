@@ -6,7 +6,7 @@ title: Breathwork as an Intervention for White Coat Hypertension
 ## Internship project at Emory University [Alphanumerics Lab](https://alphanumerics.bmi.emory.edu/)
 
 
-**[Ekaterina Rambaud](ekaterinarambaud@gmail.com)**
+**[Ekaterina Rambaud](mailto:ekaterinarambaud@gmail.com)**
 
 Cambridge High School, Atlanta, GA
 

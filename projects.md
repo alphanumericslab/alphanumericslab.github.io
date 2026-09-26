@@ -25,6 +25,7 @@ title: Projects
     - [Portable monitors](#hardware_design)
     - [Computational hardware/firmware architecture design](#fpga_design)
     - [Interpretive signal processing](#interpretive_signal_processing)
+{: .toc }
 
 ---
 ## Biomedical signal processing <a name="bsp"></a>
@@ -32,7 +33,7 @@ title: Projects
 ### The open-source electrophysiological toolbox (OSET) <a name="oset"></a>
 ![Cardiovascular health](./assets/images/oset-logo.png)
 
-The [OSET]((https://github.com/alphanumericslab/OSET)) is a codebase aiming to enhance biomedical informatics and engineering through open-source software development, particularly in biomedical signal processing. Recognizing the gap between advanced data-driven methods and domain-specific skills, OSET was conceived in 2006, building on well-designed and science-driven methodologies for physiological time-series analysis. OSET's functionalities started with toolsets for electrocardiogram data analysis, and were gradually extended to electroencephalogram and phonocardiogram data, which are the most commonly acquired time-series data in biomedical applications. It also features biosignal modeling tools for data augmentation for training machine learning and deep learning models. It also offers generic biosignal processing tools for denoising and curating all types of physiological time-series recordings. The OSET codebase is primarily developed in MATLAB, with some partial functionalities in C++ and more recently in Python. It operates under a permissive open license, encouraging community-driven development. This approach provides a transparent means for implementing physiological signal processing pipelines and offers standardized benchmarking for research and development purposes. Over the years, some modules of OSET have been translated to Python and C/C++, and integrated into medical devices and cloud-based diagnostic software for managing large datasets.
+The [OSET](https://github.com/alphanumericslab/OSET) is a codebase aiming to enhance biomedical informatics and engineering through open-source software development, particularly in biomedical signal processing. Recognizing the gap between advanced data-driven methods and domain-specific skills, OSET was conceived in 2006, building on well-designed and science-driven methodologies for physiological time-series analysis. OSET's functionalities started with toolsets for electrocardiogram data analysis, and were gradually extended to electroencephalogram and phonocardiogram data, which are the most commonly acquired time-series data in biomedical applications. It also features biosignal modeling tools for data augmentation for training machine learning and deep learning models. It also offers generic biosignal processing tools for denoising and curating all types of physiological time-series recordings. The OSET codebase is primarily developed in MATLAB, with some partial functionalities in C++ and more recently in Python. It operates under a permissive open license, encouraging community-driven development. This approach provides a transparent means for implementing physiological signal processing pipelines and offers standardized benchmarking for research and development purposes. Over the years, some modules of OSET have been translated to Python and C/C++, and integrated into medical devices and cloud-based diagnostic software for managing large datasets.
 
 ### Dynamic ECG biomarkers of repolarization adaptation <a name="dynamic_ecg_biomarkers"></a>
 
@@ -144,7 +145,7 @@ During the COVID-19 pandemic, our lab contributed to the development of mathemat
 - Sameni, R. (2021). [Model-based prediction and optimal control of pandemics by non-pharmaceutical interventions](https://doi.org/10.1109/JSTSP.2021.3129118). IEEE Journal of Selected Topics in Signal Processing, 16(2), 307-317.
 - Open-source codes and simulations [here](https://github.com/rsameni/EpidemicModeling).
 - The [Simulation & Estimation of EPIdemics with Algorithms (SEEPIA)](http://51.178.55.78/SEEPIA/seepia.htm) work group.
- - Short courses on epidemic disease propagation modeling in [Farsi](https://youtu.be/Zfh2G0VpBY) and in [English](https://youtu.be/pasyQympFGE)
+ - Short courses on epidemic disease propagation modeling in [Farsi](https://youtu.be/_Zfh2G0VpBY) and in [English](https://youtu.be/pasyQympFGE)
 
 ### Maternal-fetal healthcare in low-resourced settings <a name="maternal_fetal_health_low_resource"></a>
 ![Maternal-fetal health](./assets/images/maternal-fetal.png)
@@ -178,7 +179,7 @@ In our former lab at [Shiraz University](https://shirazu.ac.ir/en/home), our tea
 
 Hardware accelerators are currently at the heart of many machine learning and biomedical signal processing systems. In our former research lab at [Shiraz University](https://shirazu.ac.ir/en/home), our team has contributed to the development of efficient computational firmware based on field-programmable gate array (FPGA) technologies. The objective has been to develop firmware modules common in many machine learning and biomedical signal processing systems. To date, our contributions include the development of FPGA-based linear and nonlinear filter units, automated deep and shallow neural network architectures, low-level toolboxes for matrix and vector manipulation on hardware, automated mechanisms for porting state-space systems onto FPGA, and an automated mechanism for transforming recursive signal processing pseudo-codes into FPGA-based modules. The objective of this research was to develop an ecosystem of open-source firmware modules, which can be integrated and used to develop machine learning and signal processing hardware accelerators. Considering that FPGA technology is also used for prototyping application-specific integrated circuits (ASIC), the developed units can eventually be used for developing customized machine learning chips. The FPGA hardware systems required for our firmware design and evaluation have also been designed and manufactured by our team and used as trainer boards for an FPGA lab developed and presented at Shiraz University from 2008 to 2018. Some of our scientific contributions in this area include:
 
- - [Hardware efficient running median filters](https://doi.org/10.1109/TCSII.2015.2504945) and its [source codes](https://rsameni.github.io/Research/Projects/MedianFilter/median.html).
+ - [Hardware efficient running median filters](https://doi.org/10.1109/TCSII.2015.2504945) and its [source codes](https://sameni.info/research/projects/MedianFilter/median.html).
  - [HDL Code Generator Toolkit](https://github.com/alphanumericslab/HDLCodeGenerators)
  - Nikahd, E., Behnam, P., and Sameni, R. (2015). [High-speed hardware implementation of fixed and runtime variable window length 1-D median filters](https://doi.org/10.1109/TCSII.2015.2504945). IEEE Transactions on Circuits and Systems II: Express Briefs, 63(5), 478-482.
 
@@ -188,6 +189,6 @@ Hardware accelerators are currently at the heart of many machine learning and bi
 Interpretive Signal Processing (ISP) is an ad hoc technique for customizing signal processing algorithms for non-numeric data. Genomic data such as DNA or protein sequences are examples of such data. Contrary to the conventional approach of coding and decoding non-numeric data to numeric values, the main idea in ISP is to interpret signal processing algorithm as they are and to tailor similar operators for the direct manipulation of non-numeric data. We have studied two cases of ISP in our previous research:
 - Saadi, H. H., & Sameni, R. (2012, May). [Using matched filters for similarity search in genomic data](https://doi.org/10.1109/AISP.2012.6313793). In The 16th CSI International Symposium on Artificial Intelligence and Signal Processing (AISP 2012) (pp. 469-472). IEEE.
 - Hassani Saadi, H., Sameni, R., and Zollanvari, A. (2017). [Interpretive time-frequency analysis of genomic sequences](https://doi.org/10.1186/s12859-017-1524-0). BMC bioinformatics, 18, 31-39.
-- See also the extended version [here](https://rsameni.github.io/Research/Projects/ISP/ISP.html).
+- See also the extended version [here](https://sameni.info/research/projects/ISP/ISP.html).
 
 ***

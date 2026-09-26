@@ -1,0 +1,10 @@
+{%- comment -%} Photo grid. Usage: {% include team/grid.html people=site.data.team.members %} {%- endcomment -%}
+<ul class="people">
+{%- for p in include.people %}
+<li class="person">
+<img class="person-photo" src="{{ p.photo | relative_url }}" alt="{{ p.alt | default: p.name | escape }}" loading="lazy">
+<p class="person-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}</p>
+<p class="person-role">{{ p.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+</li>
+{%- endfor %}
+</ul>

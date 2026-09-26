@@ -1,9 +1,12 @@
 ---
-layout: page
+# Homepage. The logo and tagline at the top come from `hero` below;
+# everything after the front matter is ordinary Markdown.
+layout: home
+hero:
+  logo: /assets/img/alphanumerics-lab-logo.png
+  logo_alt: "Alphanumerics Lab logo: an ECG beat feeding a neural network and a state model"
+  tagline: From data to models, algorithms, decisions and beyond....
 ---
-![Logo](/assets/img/alphanumerics-lab-logo.png)
-*From data to models, algorithms, decisions and beyond....*
-
 
 ## The Alphanumerics Research Lab at Emory University and Georgia Tech
 

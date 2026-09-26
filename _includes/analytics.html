@@ -1,0 +1,14 @@
+{%- comment -%}
+  Emits Google Analytics only for GA4 IDs ("G-...") in production builds.
+{%- endcomment -%}
+{%- assign ga_id = site.google_analytics | append: "" | strip -%}
+{%- assign ga_prefix = ga_id | slice: 0, 2 -%}
+{%- if jekyll.environment == "production" and ga_prefix == "G-" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ ga_id }}');
+  </script>
+{%- endif -%}

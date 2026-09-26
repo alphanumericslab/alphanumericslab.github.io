@@ -2,9 +2,13 @@
 
 source "https://rubygems.org"
 
-# gem "jekyll", "~> 4.2.0" # Explicitly specify the Jekyll version
-gem "kramdown-parser-gfm" # Always include this gem for GitHub Pages compatibility
-gem "jekyll-redirect-from" # Include your custom plugin
+gem "jekyll", "~> 4.3"
 
-# Uncomment the following line if deploying to GitHub Pages
-gem "github-pages", group: :jekyll_plugins
+group :jekyll_plugins do
+  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-redirect-from", "~> 0.16"
+  gem "jekyll-sitemap", "~> 1.4"
+end
+
+# Needed for `jekyll serve` on Ruby 3+
+gem "webrick", "~> 1.8"
