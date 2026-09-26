@@ -474,6 +474,11 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   }
 }
 
+/* Logo adapts to dark mode: brightness inverted, hues kept */
+@media (prefers-color-scheme: dark) {
+  .hero-logo { filter: invert(0.92) hue-rotate(180deg) saturate(1.25); }
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--rule);
