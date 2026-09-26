@@ -463,10 +463,11 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .people-row-position { font-size: 0.9375rem; margin-top: 0.15rem !important; }
 .people-row-research { color: var(--muted); font-size: 0.875rem; line-height: 1.5; margin-top: 0.35rem !important; }
 
-/* Transparent PNG figures (logo, project diagrams) are drawn for white paper;
-   give them a white card in dark mode so their black lines stay visible. */
+/* Transparent PNG figures in page content (project diagrams) are drawn for
+   white paper; give them a white card in dark mode so their black lines stay
+   visible. The homepage logo is excluded: it has its own white outlines and
+   is meant to sit directly on the dark background. */
 @media (prefers-color-scheme: dark) {
-  .hero-logo,
   .prose img:not(.director-photo):not(.person-photo):not(.people-row-photo) {
     background: #fff;
     padding: 0.6rem;

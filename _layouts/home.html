@@ -4,7 +4,7 @@ layout: base
 <section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title" class="visually-hidden">{{ site.title | escape }}</h1>
   {%- if page.hero.logo %}
-  <img class="hero-logo" src="{{ page.hero.logo | relative_url }}" alt="{{ page.hero.logo_alt | default: 'Lab logo' | escape }}" width="1569" height="572" fetchpriority="high">
+  <img class="hero-logo" src="{{ page.hero.logo | relative_url }}" alt="{{ page.hero.logo_alt | default: 'Lab logo' | escape }}" width="2172" height="724" fetchpriority="high">
   {%- endif %}
   {%- assign tagline = page.hero.tagline | default: site.tagline -%}
   {%- if tagline %}
