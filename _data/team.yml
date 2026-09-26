@@ -1,6 +1,7 @@
 # Lab team. Edit this file to add, update or move people.
 # Photos live in /Team/. Text fields accept Markdown (links, italics).
 # Sections: director, members (current), alumni, shiraz_alumni.
+# `thumb` (optional) is a face-centred square crop used on the page; `photo` is the original.
 director:
   name: Dr Reza Sameni
   url: https://sameni.info/
@@ -17,7 +18,7 @@ members:
   role: PhD student, Emory University
   photo: Team/somayyeh-mousavi.png
   alt: Somayyeh Mousavi
-- name: Massoud Nateghi
+- name: Masoud Nateghi
   role: PhD student, Emory University
   photo: Team/masoud-nateghi.png
   alt: Masoud Nateghi
@@ -73,111 +74,130 @@ shiraz_alumni:
   research: A Statistical Framework for Clinical Parameter Estimation of Cardiac Signals
   years: 2017-2022
   photo: Team/davood-fattahi.png
+  thumb: Team/thumbs/davood-fattahi.jpg
 - name: Fahimeh Jamshidian Tehrani
   url: https://www.linkedin.com/in/fahimeh-jamshidian-t
   position: PhD, Shiraz University
   research: Online Noninvasive Fetal Cardiac Signal Extraction
   years: 2012-2019
   photo: Team/fahimeh-jamshidian-tehrani.png
+  thumb: Team/thumbs/fahimeh-jamshidian-tehrani.jpg
 - name: Mohammad-Ali Nikouei Mahani
   url: https://www.linkedin.com/in/mohammad-ali-nikouei-mahani-24109528/
   position: Senior Machine Learning Engineer at BMW
   research: Hardware engineer in Shiraz University Signal Processing Center (SPC). [Mobile ECG and Holter Monitor Design](https://sameni.info/research/projects/HolterMonitor/NikoueiHolters.png)
   years: 2009-2010
   photo: Team/mohammadalinikouei.jpg
+  thumb: Team/thumbs/mohammadalinikouei.jpg
 - name: Hamed Hassani-Saadi
   url: https://www.linkedin.com/in/hamed-hassani-saadi-060292100/
   position: Machine learning engineer at Rianta Solutions
   research: 'Hardware engineer in Shiraz University Signal Processing Center (SPC). MS thesis in AI: [Application of signal processing algorithms for non-numeric data](https://doi.org/10.1186/s12859-017-1524-0) (The notion of interpretive signal processing)'
   years: 2010-2013
   photo: Team/hamedhassani.JPG
+  thumb: Team/thumbs/hamedhassani.jpg
 - name: Marzieh Fatemi
   url: https://www.linkedin.com/in/marzieh-fatemi-04ba846b/
   position: Biomedical software developer at ScienceBeam
   research: 'MS thesis in BME: [Application of subspace tracking techniques for fetal cardiac signal extraction](https://doi.org/10.1007/s40998-017-0018-4)'
   years: 2011-2013
   photo: Team/marziehfatemi.jpeg
+  thumb: Team/thumbs/marziehfatemi.jpg
 - name: Sajjad Karimi
   url: https://www.linkedin.com/in/sajjad-karimi-67483b99/
   position: PhD candidate in Biomedical Engineering at Sharif University of Technology
   research: Blind Source Separation Algorithm Developement
   years: 2011-2013
   photo: Team/sajjad-karimi.png
+  thumb: Team/thumbs/sajjad-karimi.jpg
 - name: Maryam Samieinasab
   url: https://scholar.google.com/citations?user=B2Luc-QAAAAJ&hl=en
   position: PhD From Isfahan University of Medical Sciences, Postdoctoral fellow, Baylor College of Medicine (BCM), Houston, Texas (Starting Aug 2020)
   research: 'MS thesis in BME: [Modeling and Denoising of Fetal Phonocardiogram](https://doi.org/10.1109/IranianCEE.2015.7146186)'
   years: 2012-2015
   photo: Team/maryamsamieinasab.JPG
+  thumb: Team/thumbs/maryamsamieinasab.jpg
 - name: Esmaeil Seraj
   url: https://www.linkedin.com/in/esmaeil-seraj-70590b80/
   position: PhD student at Georgia Tech
   research: 'MS thesis in BME: [Study and comparison of cerebral signal phase extraction and analysis methods](https://github.com/EsiSeraj/EEG-PhaseFreq-Analysis)'
   years: 2013-2016
   photo: Team/esmaeilseraj.JPG
+  thumb: Team/thumbs/esmaeilseraj.jpg
 - name: Roohollah Mohammadzadeh
   url: mailto:ro.mohammadzadeh@gmail.com
   position: PhD Student at Polytechnique Montréal (starting Aug 2020)
   research: 'MS thesis in Computer Architecture: Implementation of blind source separation and frequency scrambling algorithms on FPGA soft-cores using mixed design'
   years: 2013-2016
   photo: Team/roohollahmohammadzadeh.jpg
+  thumb: Team/thumbs/roohollahmohammadzadeh.jpg
 - name: Peiman Gordany
   url: https://www.linkedin.com/in/peiman-gordany-8b0385b5
   position: MS Graduate in Telecommunications, Senior Design Engineeer at [VAP, Inc.](http://vapco.ir/)
   research: Digital and analog electronics and telecommunications systems expert, Medical electronics device designer and developer
   years: 2014-2020
   photo: Team/peimangordany.jpg
+  thumb: Team/thumbs/peimangordany.jpg
 - name: Saman Doostkam
   url: mailto:samandoostkam26@yahoo.com
   position: PhD Candidate in Biomedical Engineering at Shiraz University
   research: 'MS thesis in BME: Design and implementation of a portable assistive system for visually impaired people'
   years: 2014-2016
   photo: Team/samandoostkam.jpg
+  thumb: Team/thumbs/samandoostkam.jpg
 - name: Mahdi Rahbar-Alam
   url: mailto:m.rahbaralam@gmail.com
   position: Electronics Designer at Rayan Energy Co., Biomedical Engineer at Shiraz University of Medical Sciences
   research: 'MS thesis in BME: [Evaluation of Instantaneous Frequency Estimation Techniques with Application to Electroencephalogram Analysis](https://www.biorxiv.org/content/10.1101/2020.05.13.092841v1)'
   years: 2014-2017
   photo: Team/mahdirahbaralam.jpg
+  thumb: Team/thumbs/mahdirahbaralam.jpg
 - name: Laleh Akbari
   url: https://www.linkedin.com/in/laleh-akbari/
   position: FPGA Developer at [Faraz Ertebat](http://farazcomm.com)
   research: 'MS thesis in Computer Atchitecture: Random Circuit Generation for Evaluation of Different Levels of Synthesis and Implementation of Reconfigurable Circuits'
   years: 2014-2017
   photo: Team/lalehakbari.jpg
+  thumb: Team/thumbs/lalehakbari.jpg
 - name: Pezhman Torabi
   url: mailto:torabi.pezhman@gmail.com
   position: Documentary filmmaker and entrepreneur
   research: 'MS thesis in Computer Architecture: Implementation of Artificial Neural Networks on FPGA with Scalable and Parametric Design'
   years: 2014-2017
   photo: Team/pezhmantorabi.png
-- name: Arsalam Kazemnejad
+  thumb: Team/thumbs/pezhmantorabi.jpg
+- name: Arsalan Kazemnejad
   url: mailto:arsalan.kazemnejad@gmail.com
   position: MS Graduate
   research: 'MS thesis in BME: Analysis of Synchronous Electrocardiogram and Phonocardiogram Parameters Extracted from Normal Subjects'
   years: 2015-2018
   photo: Team/arsalankazemnejad.png
+  thumb: Team/thumbs/arsalankazemnejad.jpg
 - name: Saeed Keshavarzi
   url: mailto:keshavarzisaeid14@gmail.com
   position: IT Expert at Fars Regional Electric Company
   research: 'MS thesis in Compouter Architecture: Designing a Hardware Architecture for the Implementation of Online Subspace Tracking Algorithms'
   years: 2015-2018
   photo: Team/saeedkeshavarzi.jpeg
+  thumb: Team/thumbs/saeedkeshavarzi.jpg
 - name: Farzin Negahbani
   url: http://www.negahbani.info
   position: Master of Computer Science, [KUIS AI Lab](https://github.com/Farzin-Negahbani), Koç University
   research: FPGA Lab Board Design and Implementation
   years: 2016-2018
   photo: Team/farzinnegahbani.jpg
+  thumb: Team/thumbs/farzinnegahbani.jpg
 - name: Najmeh Kheram
   url: mailto:nkheram@gmail.com
   position: Master 2 Student (the [SIGMA Program](https://phelma.grenoble-inp.fr/en/studies/master-signal-image-processing-methods-and-applications#page-presentation)), Grenoble Alpes University
   research: 'MS thesis in BME: Modeling and Denoising of Phonocardiogram Signals'
   years: 2016-2019
   photo: Team/najmehkheram.jpg
+  thumb: Team/thumbs/najmehkheram.jpg
 - name: Maryam Maghsoudi
   url: mailto:maghsoudimaryam27@gmail.com
   position: MS Graduate
   research: 'MS thesis in BME: Tracking and estimation of biological branching structures'
   years: 2016-2019
   photo: Team/maryammaghsoudi.jpg
+  thumb: Team/thumbs/maryammaghsoudi.jpg

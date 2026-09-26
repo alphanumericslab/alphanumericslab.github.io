@@ -18,6 +18,8 @@ Source for [sameni.org](https://sameni.org), the website of the Alphanumerics La
 
 To add someone to the team, copy an existing entry in `_data/team.yml`, change the fields, and add their photo to `Team/`. Moving a person from `members` to `alumni` moves them on the page.
 
+The Shiraz alumni list uses an optional `thumb:` image (a square, face-centred crop in `Team/thumbs/`, about 400×400 px) and falls back to `photo:` if there isn't one. For a new entry, crop the headshot to a square around the face and save it there.
+
 On the Projects page, the contents list at the top is styled by the `{: .toc }` line directly under it. Section anchors (`<a name="...">`) are what the list links to, so keep them when editing headings.
 
 Add `math: true` to a page's front matter to load MathJax.
