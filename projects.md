@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-- [Biomedical signal processing](#bsp)
+- [Biomedical signal processing & machine learning](#bsp)
     - [The open-source electrophysiological toolbox (OSET)](#oset)
     - [Dynamic ECG biomarkers of repolarization adaptation](#dynamic_ecg_biomarkers)
     - [ECG image digitization tools](#ecg_image_digitization)
