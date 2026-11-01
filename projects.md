@@ -5,6 +5,7 @@ title: Projects
 
 - [Biomedical signal processing & machine learning](#bsp)
     - [The open-source electrophysiological toolbox (OSET)](#oset)
+    - [WFDB-x: the WFDB software in seven programming languages](#wfdbx)
     - [Dynamic ECG biomarkers of repolarization adaptation](#dynamic_ecg_biomarkers)
     - [ECG image digitization tools](#ecg_image_digitization)
     - [ECG analysis](#ecg_analysis)
@@ -34,6 +35,15 @@ title: Projects
 ![Cardiovascular health](./assets/images/oset-logo.png)
 
 The [OSET](https://github.com/alphanumericslab/OSET) is a codebase aiming to enhance biomedical informatics and engineering through open-source software development, particularly in biomedical signal processing. Recognizing the gap between advanced data-driven methods and domain-specific skills, OSET was conceived in 2006, building on well-designed and science-driven methodologies for physiological time-series analysis. OSET's functionalities started with toolsets for electrocardiogram data analysis, and were gradually extended to electroencephalogram and phonocardiogram data, which are the most commonly acquired time-series data in biomedical applications. It also features biosignal modeling tools for data augmentation for training machine learning and deep learning models. It also offers generic biosignal processing tools for denoising and curating all types of physiological time-series recordings. The OSET codebase is primarily developed in MATLAB, with some partial functionalities in C++ and more recently in Python. It operates under a permissive open license, encouraging community-driven development. This approach provides a transparent means for implementing physiological signal processing pipelines and offers standardized benchmarking for research and development purposes. Over the years, some modules of OSET have been translated to Python and C/C++, and integrated into medical devices and cloud-based diagnostic software for managing large datasets.
+
+### WFDB-x: the WFDB software in seven programming languages <a name="wfdbx"></a>
+
+For more than four decades, the WFDB (WaveForm DataBase) format and its C software package, originally developed by George B. Moody at MIT, have been a common foundation for physiological signal processing. PhysioNet distributes its databases in this format, and many of the PhysioNet Challenges release their data in it. However, the original package is written in C, while most research today is done in Python, MATLAB, R, Julia and other languages, through independent implementations that do not always behave like the C library.
+
+[WFDB-x](https://sameni.org/wfdb-x/) is a reimplementation of the WFDB Software Package (version 10.7.0) in seven languages: Python, C++, Rust, Julia, R, MATLAB/Octave and Kotlin (for Android, iOS and JVM applications). Each implementation is written natively in its own language, without calling the C library, and provides the complete WFDB library, its command-line tools for reading, writing and converting signals and annotations, and a high-level interface in the idiom of the language. A conformance suite of more than 1,000 test cases, whose expected results were produced by the original C programs, checks that every implementation reads and writes exactly the same samples, annotations and files, byte for byte. WFDB-x also corrects a small set of legacy behaviors that can cause silent errors, such as built-in default sampling frequencies and gains, automatic searches of PhysioNet for missing files, and the loss of annotations during sorting, while keeping the original behavior available through a legacy mode. The Rust, Julia and C++ implementations read records several times faster than the original C library. WFDB-x was developed with AI assistance under the direction of our team, and is distributed under the GNU General Public License. Read more:
+
+- [WFDB-x source code and documentation](https://github.com/alphanumericslab/wfdb-x)
+- Python package: `pip install wfdb-x` ([PyPI](https://pypi.org/project/wfdb-x/))
 
 ### Dynamic ECG biomarkers of repolarization adaptation <a name="dynamic_ecg_biomarkers"></a>
 
